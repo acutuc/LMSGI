@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TITLE va el título que se lee en la pestaña arriba</title>
+		<meta charset="utf-8"/>
+		<link href="img/#" rel="shortcut icon"/><!--LINK (HREF="#") para poner la ruta del favicon, (REL="SHORTCUT ICON") para poner el favicon.-->
+	</head>
+	<body>
+
+		<h1>H1 esto es para poner el texto grande, del 1 al 6.</h1>
+		<h2>H2 ejemplo del H2</h2>
+		<p>P para poner un párrafo. Es un elemento de línea. <a href="https://www.google.es" name="Ir a Google">A (HREF="#") para poner un enlace.</a></p>
+		<hr/>
+		lo de arriba es un HR/ que es el rayote ese guapo
+		<br/>
+		BR para hacer un salto de línea.<br/>
+		<strong>STRONG para escribir en negrita</strong><br/>
+		<em>EM para escribir en cursiva</em><br/>
+		<del>DEL para tachar</del><br/>
+		<ins>INS para subrayar</ins><br/>
+		<blockquote>BLOCKQUOTE para poner una sangría de esas raras. Generalmente lleva el atributo (CITE="#") para poner una url de dónde se extrae el texto que contiene.</blockquote><br/>
+		<abbr title="ABBR">ABBR</abbr>Esto es una abreviación. Lleva el atributo (TITLE="#") para poner el significado de la abreviación.<br/>
+		<acronym title="ACRONYM">ACRONYM</acronym>Esto es un acrónimo. Lleva el atributo (TITLE="#") para poner el significado de las siglas.<br/>
+		<cite>CITE para citar lo que dice alguien.</cite><br/>
+		&nbsp; <cite>&</cite>NBSP para hacer espacios<br/>
+		<pre>
+			PRE para poner texto preformateado.
+			esto mantiene el formato original de cada texto.
+		</pre>
+		<h2>Listas:</h2>
+		<ul>
+			<li>UL. Listas desordenadas. Dentro van los LI</li>
+		</ul>
+		<ol>
+			<li>OL. Listas ordenadas. Dentro van los LI</li>
+		</ol>
+		<dl>
+			<dt>DL. Lista de definicion. Dentro van los DT (que es lo que se definirá).</dt>
+			<dd>DD. Para poner la definición de un DT</dd>
+		</dl>
+		<img src="##" alt="esto es para repasar tt" title="imagen de repaso"/>
+		Las imágenes van con IMG. Sus atributos son (SRC="#") para poner la dirección de la imagen, (ALT="#") para enseñar el nombre de la imagen en caso de no cargar y (TITLE="#") para ponerle un título. 
+		<h2>Tablas: </h2>
+		<table border="1">
+			<caption>CAPTION para ponerle titulos a las tablas.</caption>
+			<tr>
+			  <td><strong>TABLE para iniciar las tablitas. (BORDER="n") para poner bordes</strong></td>
+			  <td><strong>TR para las filas</strong></td>
+			  <td><strong>TD para las columnas</strong></td>
+			</tr>
+			
+			<tr>
+			  <td colspan="4">(COLSPAN="n") para fusionar las filas</td>
+			  <td rowspan="2">(ROWSPAN="n") para fusionar las columnas</td>
+			  <td>estudia perroooo</td>
+			</tr>
+		</table>
+		<h2>Formularios: </h2>
+		<form action="" method="post" enctype="multipart/form-data"> <!-- action sirve para indicar el destino del formulario, method puede ser post o get -->
+
+			<p> <label for="nombre3"> Etiqueta </label> 	<input type="text" name="nombre3" id="nombre3" placeholder="placeholder" size="50" maxlength="9" required=""/></p>
+			<!-- label usa for para anexarse al input y se puede colocar depende de donde convenga, delante o detrás; 	type indica el tipo, name es obligatorio, id anexa a label, placeholder coloca un texto que desaparece, value lo coloca directamente, size indica el tamaño, maxlength la máxima capacidad de caracteres, y required, dicta si es obligatorio -->
+			<p> <input type="password" id="clave" name="clave" placeholder="contraseña"/> </p>
+			<p> <input type="checkbox" name="casilla" id="acepto" checked required=""/> </p> <!-- checked indica si está marcado previamente -->
+
+			<p>
+			<input type="radio" name="sexo" id="hombre" value="hombre" checked/> <label for="hombre"> Hombre </label>
+			<input type="radio" name="sexo" id="mujer" value="mujer"/> <label for="mujer"> Mujer </label>
+			</p>
+
+			<p> <input type="submit" name="Enviar" value="Enviar"/>
+			<input type="reset" name="BtnEnviar" value="Borrar todo"/> </p>
+
+			<p> <input type="file" name="adjunto" id="foto"/> </p>
+
+			<p> <textarea id="descripcion" name="descripcion" cols="40" rows="5" > textarea </textarea> </p> <!-- cols y rows indica su tamaño-->
+
+			<p> <select id="impuestos" name="impuestos"> <!-- size="n" (tamaño) multiple="multiple" (elec. multi) --> 
+  				<optgroup label="optgroup"> 	
+  					<option value="4%" selected="selected"> option </option> <!--  selected="selected" para tenerla preseleecionada -->
+ 					<option value="7%"> 7% </option>
+  				</optgroup>
+  				<optgroup label="Altos Impuestos"> 	
+  					<option value="16%">16%</option>
+ 					<option value="25%">25%</option>
+ 				</optgroup> 
+			</select> </p>
+
+	</body>
+</html>
