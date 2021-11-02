@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicos de tablas</title>
+		<meta charset="UTF-8"/>	
+	</head>
+	<body>
+		<h1>Ejercicios de Tablas</h1>
+		
+		<table border="1">
+			<tr>
+				<th scope="col">CON th HAGO CABECERAS</th>
+				<th scope="col">CON tr HAGO FILAS</th>
+				<th scope="col">CON td HAGO COLUMNAS</th>
+			</tr>
+			<tr>
+				<td align="right">ASI SE PONE A LA DERECHA</td>
+				<td align="center">ASI SE PONE EN EL CENTRO</td>
+				<td><em>esta esta de relleno de tranquis</em></td>
+			</tr>
+		</table>
+			<h1>Su pedido</h1>			
+		<table align="center" border="1">
+			<caption>AQUI SE PONE EL TITULO CON caption</caption>
+				<th scope="col">Nombre producto</th>
+				<th scope="col">Precio unitario</th>
+				<th scope="col">Unidades</th>
+				<th scope="col">Sbutotal</th>
+			</tr>
+				<td>Reproductor MP3 (80GB)</td>
+				<td>192.02</td>
+				<td>1</td>
+				<td>192.02</td>
+			<tr>
+				<td>Fundas de colores</td>
+				<td>2.50</td>
+				<td>5</td>
+				<td>12.50</td>			
+			</tr>
+			<tr>
+				<td>Reproductor de radio & control remoto</td>
+				<td>12.99</td>
+				<td>1</td>
+				<td>12.99</td>
+			</tr>
+			<tr>
+				<th scope="row">TOTAL</th>
+				<td>-</td>
+				<td>7</td>
+				<td><strong>207.51</strong></td>
+			</tr>
+		</table>
+			
+			<h1>FUSION DE COLUMNAS</h1>
+				<table align="center" border="1">
+				<tr>
+					<td colspan="2" align="center">A</td>
+				</tr>
+				<tr>
+					<td>B</td>
+					<td>C</td>
+				</table>
+			<h1>FUSION DE FILAS</h1>
+				<table align="center" border="1">
+				<tr>
+					<td>A</td>
+					<td rowspan="2">B</td>
+				</tr>
+				<tr>
+					<td>C</td>
+				</tr>
+				</table>
+	</body>
+</html>

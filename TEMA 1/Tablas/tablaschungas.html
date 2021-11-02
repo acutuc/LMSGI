@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formularios</title>
+		<meta charset="UTF-8"/>
+	</head>
+	<body>
+		<h1>Texteares y Selects</h1>
+		<form action="tablaschungas.html" method="get">
+			<input type="hidden" name="id_usuario" value="67"/>
+			<p>
+				<label for="">Deje aquí su comentario:</label></br>
+			<!-- Esto es un TEXTAREA, y lleva un atributo NAME (manda los datos a la url)-->
+				<textarea id="comentarios" rows="10" cols="40" name="comentarios" placeholder="Introduzca un comentario"></textarea>
+			</p>
+			<p>
+				<label for="nacido">Nacido en:</label>
+				<select name="nacido" id="nacido" size="3" multiple>
+		<!-- Con OPTGRUOP hago grupillos dentro del desplegable SELECT-->
+				<optgroup label="Ciudades oeste">
+		<!-- OPTION es para poner las diferentes opciones dentro de un desplegable-->
+					<option value="Estepona">Estepona</option>
+					<option value="Marbella">Marbella</option>
+					</optgroup>
+					<optgroup label="Ciudades este">
+					<option value="Mijas" selected>Mijas</option>
+					<option value="Fuengirola">Fuengirola</option>
+					</optgroup>
+				</select>
+			</p>
+			<p>
+				<input type="submit" value="Enviar" name="btnEnviar"/>
+			</p>
+		</form>
+	</body>
+</html>

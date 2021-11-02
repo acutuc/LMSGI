@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>RELLENA TU CV</title>
+		<link href="Imagenes/carne.png" rel="shortcut icon"/>
+		<!-- SHORTCUT ICON ES EL FAVICON-->
+	<head>
+	<body>
+		<h2>ESTO ES UN h2</h2>
+		<form action="repaso/html/insertar_cv.html" method="post" enctype="multipart/form-data">
+		<!-- EN ACTION SE PONE LA DIRECCION DEL ARCHIVO AL QUE QUIERO IR-->
+		<!-- EN METHOD SE PUEDE PONER get (manda los datos por URL) Y post (no manda los datos por URL)-->
+		<fieldset>
+		<legend>DATOS PERSONALES</legend>
+		<!-- FIELSET ES PARA CREAR EL CUADRITO ESE RARO. LEGEND ES PARA PONERLE TITULO A FIELDSET -->
+			<p>
+				<label for="nombre">Nombre</label></br>
+				<!-- LABEL ES EL TÍTULO DEL CUESTIONARIO A RELLENAR. FOR="nombre" ES PARA IR AL "ID" ESCRITO MÁS ABAJO-->
+				<input type="text" name="nombre" id="nombre" maxlength="10"/>
+				<!-- INPUT TYPE="TEXT" ES EL CAMPO A RELLENAR DEL CUESTIONARIO. MAXLENGTH ES PARA PONER EL MÁXIMO DE CARACTERES A ESCRIBIR-->
+			</p>
+			<p>
+				<label for="apellido">Apellido</label></br>
+				<input type="text" name="apell" id="apellido" maxlength="10" size="80"/></br>
+			</p>
+				<!-- SIZE ES PARA ALARGAR EL CAMPO DONDE VAMOS A ESCRIBIR -->
+			<p>
+				<label for="clave">Contraseña</label></br>
+				<input type="password" name="clave" id="clave" maxlength="10" size="40"/></br>
+			</p>
+			<p>
+				<label for="dni">DNI</label></br>
+				<input type="text" name="dni" id="dni" maxlength="10" size="20"/></br>
+			</p>
+		</fieldset>
+			<p>
+				<label>Sexo</label></br>
+				<input type="radio" name="sexo" id="hombre" value="hombre"/><label for="hombre">Hombre</label></br>
+				<input type="radio" name="sexo" id="mujer" value="mujer"/><label for="mujer">Mujer</label>
+				<!-- LOS RADIOS TIENEN QUE TENER EL MISMO NOMBRE PARA QUE SE DESSELECCIONE LA OTRA OPCIÓN-->
+			</p>
+			<p>
+				<label for="foto">Incluir mi foto</label>
+				<input type="file" name="foto" id="foto" accept="image/*"/>
+				<!-- TYPE=FILE ES PARA BUSCAR ARCHIVO EN MIS DOSCUMENTOS. CON ACCEPT="IMAGE/*" SE RESTRINGE A QUE LOS ARCHIVOS A BUSCAR SEAN EXCLUSIVAMENTE IMAGENES-->			
+			</p>
+			<p>
+				<input type="checkbox" name="suscripcion"/>
+				<label for="suscripcion">Suscribirme al boletín de novedades.</label>
+			</p>
+			<p>
+				<input type="submit" name="btnEnviar" value="Guardar Cambios"/>
+				<input type="reset" value="Borrar los datos introducidos"/>
+			</p>
+				<!-- TYPE="SUBMIT" GUARDA LO INTRODUCIDO EN EL CAMPO DEL CUESTIONARIO. TYPE="RESET" BORRA LO ESCRITO EN EL CUESTIONARIO -->
+			</p>
+		</form>
+	</body>
+	
+<html>

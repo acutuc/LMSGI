@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formulario</title>
+		<meta charset="UTF-8"/>
+		<link href="../trollface.png" rel="shortcut icon"/>
+	</head>
+	<body>
+		<h1>Formulario de entrada</h1>
+		<form action="formulario.html" method="get">
+			<label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre">
+			<p>
+			<label for="apellidos">Apellidos: </label><input type="text" name="apellidos" id="apellidos" size="30">
+			</p>
+			<table>
+				<tr>
+					<td>Edad<br/>
+					<input type="radio" name="edad" value="v_0_20" id="v_0_20"/>
+					<label for ="v_0_20">0-20</label><br/>
+					<input type="radio" name="edad" value="v_20_40" id="v_20_40"/>
+					<label for ="v_20_40">20-40</label><br/>
+					<input type="radio" name="edad" value="v_40_60" id="v_40_60"/>
+					<label for ="v_40_60">40-60</label><br/>
+					<input type="radio" name="edad" value="v_60_100" id="v_60_100"/>
+					<label for ="v_60_100">60-100</label>
+					</td>
+					<td>
+					¿Cómo nos conociste?<br/>
+					<input type="checkbox" name="amigo" id="amigo"/>
+					<label for="amigo">A través de un amigo</label><br/>
+					<input type="checkbox" name="buscador" id="buscador"/>
+					<label for="buscador">A través de un buscador</label><br/>
+					<input type="checkbox" name="red" id="red"/>
+					<label for="red">Navegando por la red</label><br/>
+					<input type="checkbox" name="otros" id="otros"/>
+					<label for="otros">Otros</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label for="opinion">Opinión sobre nuestra página web</label><br/>
+						<textarea name="opinion" id="opinion">Escriba aquí su opinión</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="tiempo">¿Cuánto navegas por internet? (Señala la opción que más se acerquen)</label><br/>
+					<select name="tiempo" id="tiempo" size="2">
+						<option value="2">2h al día</option>
+						<option value="4">4h al día</option>
+						<option value="6">6h al día</option>
+					</select>
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			<p>
+				<input type="submit" name="btnEnviar" value="Ir a Inicio"/>
+				<input type="reset" value="Borrar Formulario"/>
+			</p>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>FORMULARIOS</title>
+	</head>
+	<body>
+		<h1>Teoría de formularios</h1>
+		<form action="prueba.html" method="get">
+			<p><label for="nombre">NOMBRE:</label><input type="text" name="nombre" id="nombre" value="" placeholder="Teclee aquí su nombre" size="50" maxlength="15" required/></p>
+			<p><label for="clave">CONTRASEÑA:</label><input type="password" name="clave" id="clave"></p>
+			<p><label>Sexo</label></p>
+			<p>
+				<input type="radio" name="sexo" id="hombre" value="hombre" checked/><label for="hombre">Hombre</label></br>
+				<input type="radio" name="sexo" id="mujer" value="mujer"/><label for="mujer">Mujer</label>
+			</p>
+			<p><label for="foto">Incluir mi foto</label><input type="file" name="foto" id="foto"</p>
+			<p><input type="checkbox" name="acepto" id="acepto" checked/><label for="acepto">Acepto los términos</label></p>
+			<p><input type="submit" name="btnEnviar" value="Enviar"/><input type="reset" name="btnreset" value="Reset"/></p>
+		
+		</form>	
+	</body>
+<html>
