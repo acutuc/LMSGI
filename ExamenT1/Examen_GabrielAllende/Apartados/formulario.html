@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formulario</title>
+		<meta charset="UTF-8"/>
+		<link href="../Images/favicon.jpg" rel="shortcut icon"/>
+	</head>
+	<body>
+		<h1>Formulario</h1>
+		<form action="../Principal/index.html" method="get">
+			<fieldset>
+			<legend>Completar</legend>
+			<label for="nombre">Nombre: </label><input type="text" id="nombre" name="nombre" maxlengh="50"/></br>
+			<label for="apellidos">Apellidos: </label><input type="text" id="apellidos" name="apellidos"/></br>
+			<label for="contraseña">Contraseña: </label><input type="password" id="contraseña" name="contraseña"/>
+			<p>
+				<input type="checkbox" name="lengua" id="lengua" value="lengua"/><label for="lengua"> Lengua</label>
+				<input type="checkbox" name="matematicas" id="matematicas" value="matematicas"/><label for="matematicas"> Matemáticas</label>
+				<input type="checkbox" name="historia" id="historia" value="historia"/><label for="historia"> Historia</label>
+				<input type="checkbox" name="geografia" id="geografia" value="geografia"/><label for="geografia"> Geografía</label>
+			<p>
+			Elija un fichero: <input type=""/></br>
+			<textarea maxlenght="50">Utilice este cuadro para escribir</textarea></br>
+			<input type="radio" id="jpg" name="tipo" value="jpg"/><label for="jpg"> JPG</label>
+			<input type="radio" id="png" name="tipo" value="png" checked/><label for="png"> PNG</label>
+			<p>
+			Seleccione un Puerto de Comunicaciones:</br>
+			<select size="3">
+				<option>USB</option>
+				<option>Paralelo</option>
+				<option selected>PS2</option>
+				<option>Serie</option>
+			</select>
+			</p>
+			</fieldset>
+			<p align="right">
+			<input type="submit" name="btnEnviar" value="Enviar"/>
+			<input type="reset" name="btnReset" value="Borrar Todo"/>
+			</p>
+		</form>
+	</body>
+<html>
