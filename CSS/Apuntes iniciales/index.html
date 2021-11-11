@@ -17,10 +17,28 @@
 		<p><em>Propiedad:</em> característica que se modifica en el elemento seleccionado, como por ejemplo su tamaño de letra, su color de fondo, etc.</p>
 		<p><em>Valor:</em> establece el nuevo valor de la característica modificada en el elemento.</p>
 		<p>El <strong><em>selector descendente</em> selecciona los elementos que se encuentran dentro de otros elementos (strong em en este ejemplo)</strong></p>
+		<p>El <strong><em>selector de hijos (>)</em> selecciona un elemento que es hijo directo de otro elemento.</strong></p>
 		<p class="centrar">(*) Es el selector universal, la regla se le aplica a todas las etiquetas de la página.</p>
 		<p class="gris">(.) Es el selector de clase, se le aplica a todas las clases que tengan el mismo nombre.</p>
 		<p id="rojo">Selector de ID. Sirve para aplicar estilo CSS a un único elemento de la página.</p>
 		
 		<p>span y fin de span son los que se utilizan para aplicar los atributos.</p>
+		
+	<h2>Unidades de medida y colores</h2>
+		<p>Unidades absolutas</p>
+			<p>NO SE UTILIZAN CASI NUNCA. Son unidades de máquina.</p>
+		<p>Unidades relativas</p>
+			<p>SON LAS QUE SE UTILIZAN. Pueden ser: em (una letra M mayúscula), px (píxeles) o %.</p>
+		margin:"valor en píxeles o em" --> Margen entre líneas.
+		padding:"valor en píxeles o em" --> Estructura que ocupa cada elemento.
+		color:"color" --> Color de la fuente.
+		font-size:"valor en píxeles o em" --> Tamaño de la fuente.
+		cursor:pointer --> Cambia el cursor como si fuera un enlace.
+				
+		p[class="enlace"]{font-size:2em} -->"a todos los "p" con clase ".enlace" se le aplica el font-size.
+		a strong {color:red} --> "a los "strong" que están incluidos dentro de un "a"".
+		a > strong {color:red} --> "a los "strong" que son hijos directos de "a"".
+		p.enlace {color:red} --> "a los "h2" que tienen la clase "enlace"".
+		
 	</body>
 </html>
