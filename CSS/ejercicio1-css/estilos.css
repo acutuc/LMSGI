@@ -1,0 +1,51 @@
+/* Esto es un comentario */
+
+
+/* Body */
+body {
+background-color: tan;
+background-image: url('jabber2.gif'); /* comillas obligatoris*/
+background-position: center right; /* centrado verticalmente, a la derecha verticamente*/
+background-repeat: no-repeat;
+background-attachment: fixed /*evita el scroll*/
+}
+
+/* Cabeceras de secciones */
+h1 {
+color:maroon;
+font-size:20pt;
+padding: 10px 10px 10px 10px; /* top-right-bottom-left */
+background-color: white;
+border-style: groove double;
+border-color: blue;
+border-width: 10px;
+text-align:center;
+margin-right: 500px;
+background-image: url("backtile.gif");
+} 
+h2 {color:orange}
+
+/* HR (Hard Rule = line) */
+hr {color:fuchsia; height:10px; margin-right:300px}
+
+/* Párrafos */
+p {font-size:12pt; margin-left: 15px}
+p.verse {color:blue; margin-left: 60px}
+p.comment {color: red}
+
+/* Divs */
+div.reference {color:slategray; margin-left: 40px;}
+
+/* Enlaces */
+a:link     {color:green}
+a:visited  {color:yellow}
+a:hover    {color:black}
+a:active   {color:blue}
+
+/* Navigacion */
+
+/* Clases usadas por todos los elementos html */
+
+/* Ids */
+
+
