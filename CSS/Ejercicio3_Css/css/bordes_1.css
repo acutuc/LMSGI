@@ -8,3 +8,37 @@ h2, h3, h4, h5, h6 {
   font-weight: normal; 
 }
 
+h1 {
+text-align:center;
+border: solid 5px;
+}
+
+h2 {
+border-left: double red 20px
+}
+
+h3 {
+border-top: dotted cyan 5px;
+border-right: dotted fuchsia 10px;
+border-bottom: dotted cyan 15px;
+border-left: dotted fuchsia 20px;
+}
+
+h4 {
+border-top: double green 15px;
+border-bottom: double blue 15px;
+}
+
+h5 {
+border-top: dashed red 10px;
+border-right: solid black 10px;
+border-bottom: dotted black 10px;
+border-left: solid black 10px;
+}
+
+h6 {
+border-top: dotted black 15px;
+border-right: solid black 10px;
+border-bottom: dashed black 10px;
+border-left: dotted red 10px;
+}
