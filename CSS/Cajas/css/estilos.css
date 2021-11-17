@@ -1,0 +1,28 @@
+body{background-color:olive}
+
+p{background-color:lightblue; /* para poner color de fondo */
+background-image:url("../img/star-4.png"); /* para poner imagen de fondo */
+background-repeat:no-repeat; /* no-repeat, repeat-x, repeat-y. */
+background-position:50px 50px; /* con el primer valor se mueve X píxeles hacia la derecha (eje X), y con el segundo valor X píxeles hacia abajo (eje Y). */
+/* se puede poner 50px bottom, 75% top... etc. */
+}
+
+p{padding:2em 4em;
+border-top-color:blue;
+border-top-width:2px;
+border-top-style:solid;
+width: 90%;
+height: 20%} /* = border-top: blue 2px solid */
+/* estilos de bordes: solid (el normal de toda la vida), dashed (rayitas), dotted (puntitos), none (sin borde), double (doble línea).
+/* padding, padding-left, padding-right, padding-bottom, padding-top */
+/* si se ponen 2 atributos, el primero es para arriba y abajo, y el segundo para la izquierda y derecha */
+/* si se ponen 4 atributos, se sigue el orden de un reloj: primero arriba, segundo derecha, tercero abajo y cuarto izquierda */
+
+strong{border:solid black 1px; padding:0.5em; margin-right:5em;}
+
+img{width:50px; height:50px}
+
+h1{border:1px solid black}
+
+#esp{margin:5em}
+/* en los elementos de línea, sólo funcionan los margin-right y margin-left */
