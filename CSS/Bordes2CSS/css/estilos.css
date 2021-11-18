@@ -1,0 +1,36 @@
+body {
+background-color:#DBFFDB;
+border:solid 10px #B8EAAD;
+text-align: justify;
+font-family: monospace;
+padding:0em 2em;
+}
+
+h1 {
+background-color:#B8EAAD;
+border:solid 0.25em #F1FFF1;
+text-align:center;
+text-transform:uppercase;
+}
+
+h3 {
+background-color:#FCD4F2;
+border:solid 0.25em #B89BB1;
+border-bottom: none;
+margin-bottom:0px;
+padding-left:1em;
+}
+
+p {
+margin-top:0px;
+padding:1em;
+border: solid 0.5em #B89BB1;
+border-top:none;
+}
+
+address {
+text-align:right;
+border-top: dashed black 2px;
+}
+
+
