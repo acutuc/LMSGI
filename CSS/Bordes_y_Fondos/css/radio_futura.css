@@ -1,0 +1,25 @@
+body { 
+  background-color: lightgrey; 
+  font-family: sans-serif; 
+}
+
+h1 {
+background-color:lightgrey;
+color:black;
+}
+
+p {
+
+}
+
+#mayus{
+font-size:1.5em;
+}
+
+#blanca{
+color:white;
+}
+
+#negras {
+color:black;
+}
