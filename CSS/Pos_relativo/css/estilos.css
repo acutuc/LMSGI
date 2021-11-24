@@ -9,12 +9,11 @@ body {
 div { 
   background-color: #F2D0AB;
   border: #C9A568 2px dashed;
-
   font-style: oblique; 
   line-height: 150%; 
   position: relative;
-  margin-right:105em;
-  margin-bottom:-3.3em;
+  width:30%;
+  margin:auto 0;
 }
 
 h1 { 
@@ -29,8 +28,8 @@ h2 {
   font-size: 150%;
   position: relative;
   top:1.5em;
-  margin-right:71em;
-  margin-left:1em;
+  left:2em;
+  width:20%;
   z-index:2;
   
 }
