@@ -1,0 +1,36 @@
+div {border:1px solid black;
+width:30%; /* width --> ANCHO */
+margin: 0 auto; /* auto te deja el mismo margen tanto por la izquierda que por la derecha */
+position: relative;
+} 
+
+p{border:5px solid red;
+width:30%;
+margin: 2em auto;
+overflow:auto; /* para poner un scroll horizontal */
+}
+
+.esp{
+padding:1.5em;
+}
+
+.otra{
+box-sizing:border-box; /* box-sizing para cambiar el de por defecto. Para que width no mida el contenido, sino todo */
+
+}
+/* class para utilizar en varios elementos. El id solamente puede estar en un elemento, es un identificador único. */
+/* position: static, relative, aboslute y fixed.
+static: corresponde al posicionamiento normal o estático. Si se utiliza este valor, se ignoran los valores de las propiedades top, right, bottom y left que se verán a continuación.
+relative: corresponde al posicionamiento relativo. El desplazamiento de la caja se controla con las propiedades top, right, bottom y left.
+absolute: corresponde al posicionamiento absoluto. El desplazamiento de la caja también se controla con las propiedades top, right, bottom y left, pero su interpretación es mucho más compleja, ya que el origen de coordenadas del desplazamiento depende del posicionamiento de su elemento contenedor.
+fixed: corresponde al posicionamiento fijo. El desplazamiento se establece de la misma forma que en el posicionamiento absoluto, pero en este caso el elemento permanece inamovible en la pantalla.*/
+#p2{
+position: fixed;
+top:0.5em; 
+right: 0.5em;
+z-index:2; /* mientras más alto sea este valor, el elemento sube de capas */
+}
+
+#p3{
+
+}
