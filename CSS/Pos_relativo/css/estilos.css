@@ -1,0 +1,48 @@
+/* Colores usados: #FDDBBD, #F2D0AB, #C9A568, #B0B0B0, #C9A568 y #DDDDDD */
+
+body { 
+  background-color: #FDDBBD;
+  font-family: sans-serif; 
+  text-align: justify; 
+}
+
+div { 
+  background-color: #F2D0AB;
+  border: #C9A568 2px dashed;
+
+  font-style: oblique; 
+  line-height: 150%; 
+  position: relative;
+  margin-right:105em;
+  margin-bottom:-3.3em;
+}
+
+h1 { 
+  color: #B0B0B0;
+  text-align: center; 
+  text-transform: uppercase; 
+}
+
+h2 { 
+  background-color: #C9A568; 
+  color: #DDDDDD; 
+  font-size: 150%;
+  position: relative;
+  top:1.5em;
+  margin-right:71em;
+  margin-left:1em;
+  z-index:2;
+  
+}
+
+p { 
+  font-style: oblique; 
+  line-height: 150%; 
+ 
+}
+
+p:first-letter { 
+  color: #C9A568; 
+  font-size: 300%; 
+  font-style: normal;
+}
