@@ -1,34 +1,11 @@
-body{
-border: 40px solid #FFF173;
-}
-
-h1{
-position:absolute; 
-top:0;
-left:40px;
-}
-
-#fondo{
-}
-
-#id1{
-border: 5px solid #FFF173;
-}
-
-.encabezado2{
-background-color: #FF7700;
-}
-
-p{
-background-color: #FFDA33;
-position: 
-}
-
-h3{
-margin-left: 20%;
-margin-right: 20%;
-background-color: #FFC533;
-border:solid 10px #FFC533;
-}
-
-
+*{margin:0px;padding:0px;}
+body{background-color:#fff173;font-family:sans-serif;padding:0 2%;}
+.blanco{background-color:white;padding:0.5%;}
+/*.blanco, h1, #ultimo{margin:0 2%;}*/
+.blanco > div{background-color:#ffc533;width:60%;margin:2% auto;padding:0.5%;}
+.amarillo{background-color:#ffda33;margin:0 1%;padding:1.5% 1% 0.5% 1%;position:relative;}
+h3{margin:1% 0%;padding:1%}
+.amarillo h3{color:white;margin:0}
+.amarillo > div{background-color:#ff7700;margin:0 1% 1% 1%;padding-bottom:0.5%;width:48%}
+.amarillo p{background-color:#ffda33;margin:0 1%;padding:0.8%;}
+.mov_der{position:absolute;right:1%;}
