@@ -1,0 +1,15 @@
+#d1{
+width:50%;
+background-color:#CCC;
+margin:0 auto;
+border:1px solid black;
+overflow:hidden;
+}
+
+#sp1{
+float:left;
+}
+
+#sp2{
+float:right;
+}

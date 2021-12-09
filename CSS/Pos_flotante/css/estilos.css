@@ -1,0 +1,37 @@
+html{
+box-sizing:border-box;
+/*Para que tenga en cuenta el borde de la caja pero con los bordes incluidos. */
+height:100%;
+}
+
+body{
+height:100%;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:inherit;
+/*Todos los elementos que tengan el atributo box-sizing, lo heredan*/
+}
+
+div{
+float:left;
+border:1px solid black;
+width:33.33%;
+height:33.33%;
+}
+/* Float puede ser right o left, eleva el elemento y los que están debajo se adaptan al espacio restante, subiendo y ocupando el espacio del elemento elevado.*/
+
+/* Con clear:(right, left o both) el elemento que no flota obvia al flotante, así que no ocuparía la posición nueva.*/
+#d1{
+border-color: red;
+}
+
+#d2{
+border-color: green;
+}
+
+#d3{
+border-color: blue;
+}
