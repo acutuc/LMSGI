@@ -1,0 +1,51 @@
+html{box-sizing:border-box}
+
+*{padding:0;margin:0;box-sizing:inherit;}
+
+body {background-color: lightgrey; font-family: sans-serif;}
+
+h1 {text-align: center;padding:0.5em}
+
+p {font-size: 150%; padding: 0.4em;}
+
+p:hover { z-index: 3; }
+
+#p1{background-color:#DBC9A6;border:#9B8F76 2px solid;width:80%;height:8%;position:absolute;left:10%;top:8%}
+
+#p2{z-index:2;background-color:#91FF91;border:#64B064 4px solid;width:35%;height:36%;position:absolute;left:32.5%; top:40%}
+
+#p3{background-color:#FFFFB3;border: #EBEBA5 4px solid;width:35%;height:36%;position:absolute;left:5%; top:18%}
+
+#p4{background-color:#C6FFFF;border: #98C4C4 4px solid;width:35%;height:36%;position:absolute;right:5%; top:18%}
+
+#p5{background-color:#FFE5FF;border: #BAA7BA 4px solid;width:35%;height:36%;position:absolute;left:5%; top:62%}
+
+#p6{background-color:#FFB4B4;border: #865F5F 4px solid;width:35%;height:36%;position:absolute; right:5%; top:62%}
+
+/*  Bordes y colores de los 6 bloques
+  background-color: #DBC9A6; 
+  border: #9B8F76 2px solid;
+ 
+
+
+  background-color: #91FF91; 
+  border: #64B064 4px solid;
+
+
+  background-color: #FFFFB3; 
+  border: #EBEBA5 4px solid;
+  
+
+  background-color: #C6FFFF; 
+  border: #98C4C4 4px solid;
+
+
+  background-color: #FFE5FF; 
+  border: #BAA7BA 4px solid;
+  
+
+  background-color: #FFB4B4; 
+  border: #865F5F 4px solid;
+*/
+
+
