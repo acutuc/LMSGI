@@ -1,3 +1,129 @@
+body{
+
+	margin:0px;
+	padding:0px;
+	font-family:sans-serif;
+	text-align:justify;
+}
+
+h1{
+
+	text-transform:uppercase;
+	background-color:lightblue;
+	font-style:italic;
+	text-align:right;
+	margin-top:0px;
+	letter-spacing:5px;
+
+}
+
+#contenido{
+	margin-left:10em;
+	margin-right:10em;
+	padding:0px;
+}
+
+#principal div{
+
+	border:2px solid black;
+	margin:20px 0px;
+	
+
+}
+
+#principal p{
+	padding:0px 10px;
+
+}
+
+h2{
+	margin:0px;
+	background-color:lightblue;
+	padding-left:10px;
+
+}
+
+#indice{
+
+	font-size:80%;
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	position:fixed;
+	left:5px;
+
+}
+
+#indice a{
+	color:black;
+
+}
+
+address{
+
+	font-size:60%;
+	position:fixed;
+	left:1px;
+	bottom:1px;
+	
+
+}
+
+
+
+#css{
+
+	position:fixed;
+	bottom:1px;
+	right:10px;
+
+}
+
+#css table{
+ 	border-collapse:collapse;
+}
+
+#css caption{
+
+	font-size:50%; 
+	font-weight:bold;
+
+
+}
+
+.rojo{
+	background-color:red;
+	color:white;
+
+}
+
+.verde{
+	background-color:green;
+	color:white;
+
+}
+
+.amarillo{
+	background-color:yellow;
+	color:black;
+
+}
+
+.azul{
+	background-color:blue;
+	color:black;
+
+}
+
+#css a{
+
+	padding: 6px;
+	line-height:32px;
+
+
+
+}
+
 
 
 
