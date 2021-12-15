@@ -5,7 +5,7 @@ height:100%;
 
 body{
 height:100%;
-margin:0.5% 2%;
+margin:1% 2%;
 padding:0;
 }
 
@@ -16,32 +16,29 @@ box-sizing:inherit;
 div{
 float:left;
 border:1px solid black;
-
 text-align:center;
 }
 
-.num{
+span{
 position:relative;
-top:40%;
+top:30%;
 }
 
 .grande{
 border:1px lightgrey solid;
-width:30%;
-height:35%;
-padding:0%;
-margin:1%;
-
+float:left;
+width:50%;
+height:100%;
 }
 
 .chico{
+font-size:10vh;
 float:left;
-position:relative;
-top:1%;
-left:2%;
 width:30%;
 height:30%;
-margin:1%;
+margin-left:2.5%;
+margin-top: 2.5%;
+position:relative;
 }
 
 #cinco{
