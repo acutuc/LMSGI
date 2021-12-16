@@ -1,0 +1,69 @@
+.cuadrado{
+width:100px;
+height:100px;
+border:2px solid blue;
+}
+
+.circulo{
+width:100px;
+height:100px;
+border:2px solid red;
+border-radius:50%; /* Redondea las esquinas. Con 50% se hace el círculo */
+}
+
+.rombo{
+width:100px;
+height:100px;
+border:2px solid green;
+transform:rotate(45deg) skew(15deg,15deg);}
+/* ROTATE --> (ºgrados que rota)
+SKEW --> (ºgrados que rota respecto al eje X, ºgrados que rota respecto al eje Y) */
+
+.triangulo1{
+width:0px;
+height:0px;
+border-top:50px solid red;
+border-bottom:50px solid blue;
+border-left:50px solid green;
+border-right:50px solid yellow;
+}
+
+.triangulo2{
+width:0px;
+height:0px;
+border-bottom:50px solid blue;
+border-left:50px solid transparent;
+border-right:50px solid transparent;
+}
+
+.triangulo3{
+width:0px;
+height:0px;
+border-top:50px solid red;
+border-left:50px solid transparent;
+border-right:50px solid transparent;
+}
+
+.triangulo4{
+width:0px;
+height:0px;
+border-top:50px solid transparent;
+border-bottom:50px solid transparent;
+border-left:50px solid green;
+}
+
+.triangulo5{
+width:0px;
+height:0px;
+border-top:50px solid transparent;
+border-bottom:50px solid transparent;
+border-right:50px solid yellow;
+}
+
+.paralelogramo{
+width:100px;
+height:100px;
+border:2px solid blue;
+transform:skew(15deg,0deg);
+margin-left:8px;
+}
