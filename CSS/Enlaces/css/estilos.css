@@ -1,0 +1,69 @@
+a:link{ /*es lo mismo utilizar solamente "a"*/
+color:black;
+}
+
+a:visited{ /*cuando el enlace ya ha sido visitado al menos una vez*/
+color:orange;
+}
+
+a:active{ /*cuando se tiene el click pulsado encima del elemento*/
+color:red;
+}
+
+a:hover{ /*cuando el cursor se pone encima del elemento*/
+text-decoration:none;
+}
+
+/*disc, circle, square, lower-roman, lower-greek, upper-latin, lower-latin, armenian...*/
+/*list-style-type cambia el dibujo a la izq del li*/
+
+#l1{
+list-style-type:disc;
+}
+
+#l2{
+list-style-type:circle;
+}
+
+#l3{
+list-style-type:square;
+}
+
+#l4{
+list-style-type:lower-roman;
+}
+
+#l5{
+list-style-type:lower-greek;
+}
+
+#l6{
+list-style-type:upper-latin;
+}
+
+#l7{
+list-style-type:lower-latin;
+}
+
+#l8{
+list-style-type:armenian;
+}
+
+#l9{
+list-style-type:upper-alpha;
+}
+
+#l10{
+list-style-type:decimal-leading-zero;
+}
+
+ul{
+border:1px solid lightgrey;
+float:left;
+margin-right:4px;
+margin-top:4px;
+margin-bottom:0px;
+padding-left:2em;
+}
+
+
