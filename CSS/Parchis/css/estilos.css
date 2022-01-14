@@ -220,11 +220,11 @@ background-color:lightgrey;
 }
 
 #circulo{
-width:33.333333333%;
-height:33.333333333%;
-border:1px solid black;
-float:left;
-left:33%;
+height:4vh;
+width:4vw;
+position:absolute;
+left:43%;
+top:87%;
 border-radius:50%;
 background-color:grey;
 }
