@@ -1,0 +1,60 @@
+html{
+box-sizing:border-box;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:inherit;
+}
+
+#header{
+width:100%;
+}
+
+#nav{
+width:40%;
+margin:0 auto;
+}
+
+ul{
+list-style:none;
+}
+
+#nav > li{
+width:25%;
+float:left;
+}
+
+#nav li a{
+background:black;
+display:block;
+color:white;
+text-decoration:none;
+text-align:center;
+padding:0.7em;
+}
+
+#nav li a:hover{
+background:#434343;
+}
+
+#nav li ul{
+display:none;
+}
+
+#nav li:hover > ul{
+display:block;
+}
+
+#fijo{
+position:relative;
+}
+
+#esp{
+position:absolute;
+width:100%;
+top:0;
+left:100%;
+}
+

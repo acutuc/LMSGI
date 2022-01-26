@@ -1,0 +1,24 @@
+table,td{
+border:1px solid black;
+}
+
+table{
+width:50%;
+margin:5% auto;
+text-align:center;
+empty-cells:hide; /*Esconde las celdas vacías.*/
+}
+
+#t1{
+border-collapse:collapse; /*Para que los huecos entre bordes se unan, se superponen las líneas*/
+}
+
+#t2{
+border-spacing:5px; /*Distancia en px entre las líneas de las celdas.*/
+}
+
+caption{
+caption-side:bottom; /*Pone el título debajo de la tabla.*/
+}
+
+

@@ -1,0 +1,53 @@
+html{
+box-sizing:border-box;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:inherit;
+}
+
+/*Cuando el elemento de bloque ocupa solamente una línea, hay un truco:
+line-height (tamaño entre líneas), y la altura del fondo del div.
+*/
+
+h1{
+width:100%;
+height:120px;
+text-align:center;
+color:white;
+background:url("../imagenes/fondo1.jpg");
+font-size:2.5em;
+line-height:120px; /*TAMAÑO ENTRE UNA LÍNEA Y OTRA*/
+}
+
+#menu{
+height:30px;
+width:100%;
+background:url("../imagenes/boton-menu.jpg");
+}
+
+#menu ul{
+width:40%;
+margin:0 auto;
+list-style:none; /*QUITA LOS SÍMBOLOS DE LOS li*/
+}
+
+#menu ul li{
+width:25%;
+float:left;
+}
+
+#menu ul li a{
+display:block; /*EXPANDE EL ENLACE DEL a AL TAMAÑO DEL ul*/
+text-align:center;
+color:white;
+text-decoration:none; /*QUITA EL SUBRAYADO DEL ENLACE*/
+line-height:30px;
+}
+
+#menu ul li a:hover{ /*:hover ES PARA CUANDO SE PONE EL RATÓN ENCIMA DEL ELEMENTO*/
+background:url("../imagenes/boton-menu2.jpg");
+color:black;
+}
