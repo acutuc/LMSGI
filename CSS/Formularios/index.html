@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Teoría Formularios CSS</title>
+			<meta charset="utf-8"/>
+			<link rel="stylesheet" href="css/estilos.css">
+	</head>
+	<body>
+			<h1>Teoría Formularios</h1>
+				<form action="index.html" method="post" enctype="multipart/form-data"> <!--RECORDAR. action A QUIÉN LE MANDO LOS DATOS, method post Y get, enctype="multipart/form-data" CUANDO VOY A MANDAR UN ARCHIVO.-->
+					<fieldset>
+						<legend>Alta de servicio</legend>
+							<div><label for="nombre">Nombre completo: </label><input type="text" name="nombre" id="nombre"/></div>
+							<div><label for="usuario">Usuario: </label><input type="text" name="usuario" id="usuario"/></div>
+							<div><label for="clave">Contraseña: </label><input type="password" name="clave" id="clave"/></div>
+						<div><button class="enlace" name="btnEnviar1">Enviar</button></div> <!-- HACEN SUBMIT -->
+					</fieldset>
+				</form>
+	</body>
+<html>

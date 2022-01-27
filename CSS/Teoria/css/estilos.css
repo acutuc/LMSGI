@@ -1,0 +1,7 @@
+.enlace{ /*PROPIEDADES PARA CAMBIAR UN BOTÓN DE APARIENCIA Y QUE SE PAREZCA A UN ENLACE.*/
+border:none;
+background:none;
+color:blue;
+text-decoration:underline;
+cursor:pointer; /*PARA CUANDO SE PONE EL RATÓN ENCIMA DE UN ENLACE, PARA QUE CAMBIE*/
+}

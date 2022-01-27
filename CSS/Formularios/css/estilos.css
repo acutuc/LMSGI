@@ -1,0 +1,8 @@
+div{
+margin:0.5em 0;
+}
+
+label{ /*CREA TABLAS. AL FLOTAR VARIOS ELEMENTOS DE LÍNEA SE TRANSFORMAN EN UN ÚNICO ELEMENTO DE BLOQUE.*/
+width:200px;
+float:left;
+}
