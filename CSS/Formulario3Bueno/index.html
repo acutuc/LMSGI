@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo de formulario</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="css/estilos.css"/>
+	</head>
+	<body>
+	<h1>Ejemplo de Formulario</h1>
+		<form action="index.html" method="post">
+			<fieldset>
+				<legend>Datos personales</legend>
+					<div class="bloque">
+						<div>
+							<div class="bloque3">
+								<label for="apellidos">Apellidos: </label>
+								<input type="text" name="apellidos" id="apellidos"/>
+							</div>
+							<div class="bloque3">
+								<label for="nombre">Nombre: </label>
+								<input type="text" name="nombre" id="nombre"/>
+							</div>
+						</div>
+						<div>
+							<div class="bloque3">
+								<label for="nacidoen">Nacido en: </label>
+								<input type="text" name="nacidoen" id="nacidoen"/>
+							</div>
+							<div class="bloque3">
+								<label for="provincia">Provincia: </label>
+								<select name ="provincia" id="provincia">
+									<option name="valencia" checked>Valencia</option>
+									<option name="malaga">Málaga</option>
+									<option name="madrid">Madrid</option>
+								</select>
+							</div>
+						</div>
+						<div>
+							<div class="esp">
+								<label for="domicilio">Domicilio: </label>
+								<select name ="domicilio" id="domicilio">
+									<option name="null"></option>
+									<option name="calle">Calle</option>
+									<option name="avenida">Avenida</option>
+									<option name="urbanizacion">Urbanización</option>
+								</select>
+								<input type="text" name="domicilio" id="domicilio2"/>
+							</div>
+						</div>
+						<div>
+							<div class="bloque3">
+								<label for="localidad">Localidad: </label>
+								<input type="text" name="localidad" id="localidad"/>
+							</div>
+							<div class="bloque3">
+								<label for="provincia2">Provincia: </label>
+								<select name ="provincia" id="provincia2">
+									<option name="valencia" checked>Valencia</option>
+									<option name="malaga">Málaga</option>
+									<option name="madrid">Madrid</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="bloque">
+						<div>
+							<div class="bloque3">
+								<label for="dni">DNI: </label>
+								<input type="text" name="dni" id="dni"/>
+							</div>
+						</div>
+						<div>
+							<div class="bloque3">
+								<label for="fechanac">Fecha de nacimiento (dd/mm/aaaa): </label>
+								<input type="text" name="fechanac" id="fechanac"/>
+							</div>
+						</div>
+						<div>
+							<div class="bloque3">
+								<label for="cp">Código Postal: </label>
+								<input type="text" name="cp" id="cp"/>
+							</div>
+						</div>
+						<div>
+							<div class="bloque3">
+								<label for="telefono">Teléfono: </label>
+								<input type="text" name="telefono" id="telefono"/>
+							</div>
+						</div>
+					</div>
+					<div id="botones">
+						<input type="reset" value="Borrar todo"/><input type="submit" value="Enviar">
+					</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
