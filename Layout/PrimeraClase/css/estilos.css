@@ -1,0 +1,47 @@
+html{
+box-sizing:border-box;
+}
+
+*{
+padding:0;
+margin:0;
+box-sizing:inherit;
+}
+
+
+
+#contenedor{
+width:90%;
+margin:0 auto;
+border:2px solid black;
+}
+
+#cabecera{
+height:150px;
+border:2px solid orange;
+}
+
+#centro{
+border:5px solid green;
+overflow:hidden;
+}
+
+#izq{
+height:300px;
+width:30%;
+border:2px solid red;
+float:left;
+}
+
+#der{
+height:500px;
+width:70%;
+border:2px solid blue;
+float:left;
+}
+
+#pie{
+height:50px;
+border:5px solid yellow;
+}
+

@@ -1,26 +1,80 @@
+html{
+box-sizing:border-box;
+}
+
+*{
+padding:0;
+margin:0;
+box-sizing:inherit;
+}
+
+h1{
+text-transform:uppercase;
+text-align:center;
+background-color:#DDD;
+margin-bottom:0.5em;
+}
+
+body{
+font-family:sans-serif;
+}
+
 legend{
-border:2px solid grey;
 background-color:white;
+border:1px solid #DDD;
+padding:0 0.3em;
 }
 
 fieldset{
-background-color:lightgrey;
-}
-div{
-margin:0.5em 0;
+background-color:#DDD;
+padding:0.5em;
 }
 
-#bloque{ 
-width:600px;
+.ext > div{
+margin-top:0.5em;
+}
+
+div div{
+overflow:hidden;
+}
+
+div div div{
 float:left;
 }
 
-#bloque2{
-width:500px;
+label{
+display:block;
+}
+
+#esp{
+width:100%;
+}
+
+#domicilio{
+width:15%;
 float:left;
 }
 
-#bloque3{
-width:200px;
+#calle{
+width:85%;
 float:left;
+}
+
+.primero{
+width:50%;
+}
+
+.ext{
+width:50%;
+float:left;
+}
+
+.roja{
+color:red;
+text-decoration:underline;
+}
+
+#botones{
+clear:both;
+text-align:right;
 }
