@@ -1,9 +1,8 @@
-html
+html{
 box-sizing:border-box;
 }
 
-*{
-margin:0;
+*{margin:0;
 padding:0;
 box-sizing:inherit;
 }
@@ -30,25 +29,25 @@ margin:1em 0;
 }
 
 #izq{
-width:250px;
+width:180px;
 background-color:red;
 float:left;
 font-size:10pt;
 margin-right:1em;
 }
 
-#cen{
-width:500px;
-background-color:green;
-float:left;
+#cen{background-color:green;
+overflow:hidden;
 font-size:12pt;
-margin-right:1em;
 text-align:justify;
 }
 
 #der{
+width:18%;
+float:right;
 overflow:hidden;
 background-color:lightblue;
+margin-left:1em;
 font-size:10pt;
 }
 
