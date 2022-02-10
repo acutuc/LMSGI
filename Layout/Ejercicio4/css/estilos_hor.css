@@ -1,0 +1,146 @@
+html{b
+box-sizing: border-box;
+}
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: inherit;
+}
+
+body{
+font:normal 13px arial, helvetica, sans-serif;
+padding: 0;
+}
+
+#contenedor{
+width:100%;
+}
+
+#cabecera{
+width:100%;
+height:120px;
+background-image: url(../images/fondo1.jpg);
+}
+
+#cabecera h1{
+text-align:center;
+color:white;
+font:bold 50px arial, helvetica, sans-serif;
+line-height:120px;
+}
+
+#menu{
+width:100%;
+height:30px;
+background:url("../images/boton-menu.jpg");
+}
+
+#menu ul{
+width:50%;
+margin:0 auto;
+list-style:none;
+}
+
+#menu ul li{
+width:25%;
+float:left;
+}
+
+#menu ul li a{
+text-decoration:none;
+color:white;
+display:block;
+text-align:center;
+line-height:30px;
+}
+
+#menu ul li a:hover{
+color:black;
+background:url("../images/boton-menu2.jpg");
+}
+
+#principal{
+width:100%;
+background:#f4f4f4;
+overflow:hidden;
+}
+
+#pie{
+width:100%;
+background:black;
+text-align:center;
+color:white;
+height:40px;
+line-height:40px;
+}
+
+#pie p a{
+color:#99f;
+}
+
+#pie p a:hover{
+color:#9f9;
+}
+
+#noticias{
+width:200px;
+float:left;
+margin:10px;
+}
+
+#noticias h3{
+margin:1em 0;
+}
+
+#central{
+background:white;
+overflow:hidden;
+border-left:1px solid #444;
+padding:10px;
+}
+
+#formulario h2{
+margin:0.5em 0;
+}
+
+#formulario > div{
+width:100%;
+border-top:1px solid #ddd;
+}
+
+#formulario .izq{
+width:40%;
+float:left;
+text-align:right;
+font-weight:bold;
+}
+
+#formulario .der{
+width:60%;
+float:left;
+text-align:left;
+padding-left:0.25em;
+}
+
+#formulario input[type="text"]{
+width:40%;
+}
+
+#formulario textarea{
+width:40%;
+height:150px;
+resize:none;
+}
+
+#botones{
+width:60%;
+float:right;
+padding-left:0.25em;
+}
+
+#botones input{
+padding:0.25em;
+}
+
+
