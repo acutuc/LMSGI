@@ -1,0 +1,268 @@
+html{
+box-sizing:border-box;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:inherit;
+}
+
+body{
+background-color:#fbf9e4;
+}
+
+#contenedor{
+width:100%;
+}
+
+#cabecera{
+width:100%;
+height:116px;
+background:url("../Imagenes/fondo.jpg");
+text-align:center;
+}
+
+#logo{
+float:left;
+margin-left:20px;
+}
+
+#menu{
+width:100%;
+height:50px;
+background-color:#1a6900;
+overflow:hidden;
+}
+
+#menu ul{
+list-style:none;
+}
+
+#menu ul li{
+float:left;
+border-right:1px solid black;
+}
+
+#menu ul li a{
+text-decoration:none;
+display:block;
+line-height:50px;
+color:white;
+padding:0 0.25em;
+}
+
+#menu span{
+float:right;
+line-height:50px;
+color:white;
+}
+
+#menu span a{
+text-decoration:none;
+color:white;
+}
+
+#enlace1{
+font-size:20px;
+}
+
+#centro{
+width:100%;
+overflow:hidden;
+padding:25px 0.5em 0 0.5em;
+}
+
+#izquierda{
+width:25%;
+float:left;
+margin-right:3em;
+}
+
+#derecha{
+overflow:hidden;
+}
+
+#pie{
+height:50px;
+background-color:#1a6900;
+margin:25px 10px 1px 10px;
+}
+
+.blanco{
+background:white;
+border-radius:5px;
+padding:0.5em;
+margin-bottom:20px;
+}
+
+.blanco h3{
+display:inline;
+}
+
+.blanco img{
+vertical-align:bottom;
+}
+
+#izq form{
+border-top:1px solid #ccc;
+padding:20px;
+}
+
+#usuario, #password{
+width:100%;
+}
+
+#entrar{
+width:19%;
+float:left;
+margin-right:2%;
+color:white;
+background:#0fc51a;
+padding:0.25em;
+}
+
+/*Al ser los dos elementos de línea, ignora el box-sizing*/
+#olvidar{
+width:79%;
+float:left;
+color:white;
+background:#1a6900;
+padding:0.25em;
+}
+
+#puntos{
+height:16px;
+background:url("../Imagenes/tres_puntos.jpg");
+}
+
+#derecha h2{
+margin: 1em 0;
+}
+
+.fondo{
+height:60px;
+padding:0;
+}
+
+.fondo p{
+padding:0 0 0 55px;
+line-height:60px;
+}
+
+#adm p{
+background:url("../Imagenes/adminis.jpg") no-repeat 0 center;
+}
+
+#adm p:hover{
+background:#1a6900 url("../Imagenes/adminis_neg.jpg") no-repeat 0 center;
+color: white;
+border-radius:5px;
+}
+
+#bio p{
+background:url("../Imagenes/biologia.jpg") no-repeat 0 center;
+}
+
+#bio p:hover{
+background:#1a6900 url("../Imagenes/biologia_neg.jpg") no-repeat 0 center;
+color: white;
+border-radius:5px;
+}
+
+#cla p{
+background:url("../Imagenes/clasicas.jpg") no-repeat 0 center;
+}
+
+#cla p:hover{
+background:#1a6900 url("../Imagenes/clasicas_neg.jpg") no-repeat 0 center;
+color: white;
+border-radius:5px;
+}
+
+#eco p{
+background:url("../Imagenes/economia.jpg") no-repeat 0 center;
+}
+
+#eco p:hover{
+background:#1a6900 url("../Imagenes/economia_neg.jpg") no-repeat 0 center;
+color: white;
+border-radius:5px;
+}
+
+#tec p{
+background:url("../Imagenes/tecnologia.jpg") no-repeat 0 center;
+}
+
+#tec p:hover{
+background:#1a6900 url("../Imagenes/tecnologia_neg.jpg") no-repeat 0 center;
+color: white;
+border-radius:5px;
+}
+
+#rel p{
+background:url("../Imagenes/religion.jpg") no-repeat 0 center;
+}
+
+#rel p:hover{
+background:#1a6900 url("../Imagenes/religion_neg.jpg") no-repeat 0 center;
+color: white;
+border-radius:5px;
+}
+
+#moo p{
+background:url("../Imagenes/moodle.jpg") no-repeat 0 center;
+}
+
+#moo p:hover{
+background:#1a6900 url("../Imagenes/moodle_neg.jpg") no-repeat 0 center;
+color: white;
+border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
