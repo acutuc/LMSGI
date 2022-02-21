@@ -1,0 +1,54 @@
+html{
+box-sizing:border-box;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:inherit;
+}
+
+body{
+background:url("../Imagenes/fondo.jpg");
+}
+
+#contenedor{
+width:50%;
+margin-left:25%;
+}
+
+#cabecera{
+width:100%;
+height:95px;
+background:url("../Imagenes/cabacera.jpg");
+}
+
+#logo{
+float:left;
+}
+
+#menu{
+width:100%;
+height:33px;
+background:url("../Imagenes/fondo_menu.jpg");
+overflow:hidden;
+}
+
+#menu ul{
+list-style:none;
+}
+
+#menu ul li{
+float:left;
+}
+
+#menu ul li a{
+text-decoration:none;
+display:block;
+line-height:33px;
+color:white;
+padding:0 0.25em;
+font-weight:bold;
+}
+
+
