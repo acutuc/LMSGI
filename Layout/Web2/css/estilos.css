@@ -15,6 +15,7 @@ background:url("../Imagenes/fondo.jpg");
 #contenedor{
 width:50%;
 margin-left:25%;
+background-color:#185512;
 }
 
 #cabecera{
@@ -51,4 +52,36 @@ padding:0 0.25em;
 font-weight:bold;
 }
 
+#centro{
+width:100%;
+}
 
+#login{
+width:100%;
+background-color:#0f330b;
+overflow:hidden;
+}
+
+#contnomusuario{
+float:left;
+margin-left:3%;
+width:33%;
+}
+
+#nomusuario{
+float:left;
+width:33%;
+margin-left:3%;
+}
+
+#contpassusuario{
+float:left;
+}
+
+#passusuario{
+float:left;
+}
+
+#contlogin{
+margin-left:80%;
+}
