@@ -13,8 +13,8 @@ background:url("../Imagenes/fondo.jpg");
 }
 
 #contenedor{
-width:50%;
-margin-left:25%;
+width:830px;
+margin: 0 auto;
 background-color:#185512;
 }
 
@@ -52,11 +52,17 @@ padding:0 0.25em;
 font-weight:bold;
 }
 
+#menu ul li a:hover{
+color:black;
+background:#c8dcc1
+}
+
 #centro{
 width:100%;
 }
 
 #login{
+margin-top:1em;
 width:100%;
 background-color:#0f330b;
 overflow:hidden;
