@@ -1,0 +1,52 @@
+html{box-sizing:border-box}
+*{box-sizing:inherit;margin:0; padding:0;}
+body{background-image:url(../Imagenes/fondo.jpg);background-size: cover;}
+#contenedor{width:830px;margin:0 auto;}
+#cabecera{width:830px;background:url(../Imagenes/cabecera.jpg);}
+#menu ul{list-style:none;}
+#menu{width:830px; height:33px;overflow:hidden;background:url(../Imagenes/fondo_menu.jpg);}
+#menu li{float:left;line-height:33px;}
+#menu a{display:block;text-decoration:none;color:white;padding:0 .5em;}
+#menu a:hover{background-color:#c6e2bc;}
+
+
+#acceso label, #acceso input{float:left;}
+#acceso label{margin-left:2em}
+#acceso input{margin:0.5em 7em 0em 2em}
+#acceso input{width:10%;}
+#acceso form{background-color:#0f340b;color:white;overflow:hidden;padding:0.25em 0}
+#acceso a{font-size:12px; color:white;}
+#acceso {background-color:#175512;overflow:hidden;padding:12px 0;}
+
+#principal{width:830px;background-color:#175512;overflow:hidden;padding:0 0.25em 1em 0.25em;}
+#principal h4{color:white;background-color:#0f340b;border-top-right-radius:10px;margin-bottom:0;padding:5px;}
+
+#izq{width:60%;}
+#der{width:38%;margin-left:2%;}
+#izq, #der{float:left;}
+#principal p img{width:100%;}
+#der p img.mitad{width:50%;float:left}
+
+#publi{color:white;font-size:0.9em;margin:0.5em 0}
+
+
+.form{background-color:#c3e3be;border-bottom:#0f340b solid 1px;padding:0.5em;}
+
+.form input[type="text"],.form input[type="password"]{width:50%;float:right}
+
+.form_esp {background-color:#0f340b;padding:0.5em;}
+.form_esp input {border:none;padding:0.25em}
+.verde_claro{color:white; background-color:#33a92e}
+
+#izq label[for="nombre"],#izq label[for="apellido"],
+#izq label[for="usuario"],#izq label[for="clave"],
+#izq label[for="clave2"],#izq label[for="email"]{color:#0f340b;font-weight:bold}
+
+label span{font-size:0.8em;font-weight:normal}
+
+#pie{height:66px;clear:both;background:url(../Imagenes/fondo_pie.jpg);padding:1em}
+.centrar{text-align:center}
+#pie {color:white;font-size:0.9em;line-height:1.5em}
+#pie p a{color:white}
+#pie p a.amarillo,.amarillo{color:yellow}
+
