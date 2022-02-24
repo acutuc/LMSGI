@@ -2,126 +2,129 @@
 <html lang="es">
 	<head>
 		<title>Manager de fútbol COMUNIO</title>
-		<meta charset="UTF-8"/>
-		<link rel="icon" href="images/favicon.png"/>
+		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/estilos.css"/>
 	</head>
 	<body>
-		<div id="cabecera">
-			<img src="Imagenes/nombre.jpg"/>
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Jugar</a></li>
-				<li><a href="#">Apostar</a></li>
-				<li><a href="#">Estadísticas</a></li>
-				<li><a href="#">Cómo jugar</a></li>
-				<li><a href="#">Tienda Virtual</a></li>
-				<li><a href="#">Foro</a></li>
-				<li><a href="#">Enlaces</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</div>
-		<div id="contenido">
-			<form id="primero" action="index.html" method="post">
-					<div>
-						<label for="nombre">Nombre de usuario: </labe>
-						<input type="text" id="nombre" name="nombre"/>
-						<br/>
-						<a href="#">&iquest;Aún no te has registrado?</a>
+		<div id="contenedor">
+			<div id="cabecera">
+				<img id="logo" src="Imagenes/nombre.jpg" title="logo" alt="logo"/>
+				
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Jugar</a></li>
+					<li><a href="#">Apostar</a></li>
+					<li><a href="#">Estadísticas</a></li>
+					<li><a href="#">Cómo jugar</a></li>
+					<li><a href="#">Tienda Virtual</a></li>
+					<li><a href="#">Foro</a></li>
+					<li><a href="#">Enlaces</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</div>
+			<div id="centro">
+				<div id="login">
+					<form method="post" action="index.html">
+						<div id="contnomusuario">
+							<div id="nomusuario">
+								<label for="usuario">Nombre de usuario:</label></br>
+								<span class="subr"><a href="#">¿Aún no te has registrado?</a></span>
+							</div>
+								<input type="text" name="usuario" id="usuario"></input>
+						</div>
+					<div id="contpassusuario">
+						<div id="passusuario">
+							<label for="password">Contraseña:</label></br>
+							<span class="subr"><a href="#">¿te has olvidado?</a></span>
+						</div>
+							<input type="password" name="password" id="password"/></input>
 					</div>
-					<div>
-						<label for="password">Contraseña: </label>
-						<input type="password" id="password" name="password"/>
-						<br/>
-						<a href="#">&iquest;Te has olvidado?</a>
-					</div>
-					<div>
-						<input type="submit" id="login" value=">>Login" name="login"/>
-					</div>
-				</form>
-			<div id="izq">
-				<div>
-					<span class="semi_title"><strong>Comunio.es - El Manager de Fútbol Online</strong></span>
-					<img src="Imagenes/bg_emotion.jpg"/>
-				</div>
-				<div>
-					<span class="semi_title"><strong>Regístrate <span id="amarillo">gratis</span>:</strong></span>
-				</div>
-				<div>
-					<form id="segundo" action="index.html" mehtod="post">
-					<div>
-						<div class="borde">
-							<label for="nom"><strong>Nombre:*</strong></label>
-							<input type="text" id="nom" name="nom"/>
+						<div id="contlogin">
+								<button>>> Login</button>
 						</div>
-						<div class="borde">
-							<label for="apel"><strong>Apellido:</strong></label>
-							<input type="text" id="apel" name="apel"/>
-						</div>
-						<div class="borde">
-							<label for="nom_us"><strong>Nombre de usuario:*</strong></label>
-							<input type="text" id="nom_us" name="nom_us"/>
-							<br/>
-							<span class="peq">(máx. 10 caracteres)</span>
-						</div>
-						<div class="borde">
-							<label for="pass"><strong>Contraseña:*</strong></label>
-							<input type="password" id="pass" name="pass"/>
-							<br/>
-							<span class="peq">(máx. 8 caracteres)</span>
-						</div>
-						<div class="borde">
-							<label for="repite"><strong>Repite tu contraseña:*</strong></label>
-							<input type="password" id="repite" name="repite"/>
-						</div>
-						<div class="borde">
-							<label for="email"><strong>Email:*</strong></label>
-							<input type="text" id="email" name="email"/>
-						</div>
-						<div class="borde">
-							<input type="checkbox" id="leido" name="leido" value="leido"/>
-							<label class="peq" for="leido">He leído las <a href="#">Términos y condiciones</a> y las acepto.*</labe>
-						</div>
-						<div class="borde">
-							<input type="radio" id="azar" name="comunidad" value="azar"/>
-							<label classs="peq" for="azar">Entrar a una comunidad al azar</label>
-						</div>
-						<div class="borde">
-							<input type="radio" id="existe" name="comunidad" value="existe"/>
-							<label class="peq" for="existe">Entrar a una comunidad al azar</label>
-						</div>
-						<div class="borde">
-							<span class="peq">* campo obligatorio</span>
-						</div>
-					</div>
-					<div class="borde">
-						<input type="submit" id="no_registro" value="Intenta sin registrarte" name="no_registro"/>
-						<input type="submit" id="gratuito" value="Jugar gratuitamente>>" name="gratuito"/>
-					</div>
 					</form>
 				</div>
+				<div id="comunio">
+					<div id="titulo">
+						<h4>Comunio.es - El Manager de Fútbol Online</h4>
+					</div>
+					<img src="Imagenes/bg_emotion.jpg" alt="logo" title="logo"/>
+				</div>
+				<div id="registro">
+					<div id="titulo2">
+						<h4>Regístrate <span id="amarillo">gratis</span></h4>
+					</div>
+					<form method="post" action="index.html">
+						<div>
+							<label for="nombre">Nombre:*</label>
+							<input type="text" id="nombre" name="nombre"/>
+						</div>
+						<div>
+							<label for="apellido">Apellido:</label>
+							<input type="text" id="apellido" name="apellido"/>
+						</div>
+						<div>
+							<label for="nombreusuario">Nombre de usuario:*</label></br>(máx. 10 caracteres)
+							<input type="text" id="nombreusuario" name="nomusuario"/>
+						</div>
+						<div>
+							<label for="contra">Contraseña:*</label></br>(máx. 8 caracteres)
+							<input type="password" id="contra" name="contra"/>
+						</div>
+						<div>
+							<label for="repitecontra">Repite tu contraseña:*</label>
+							<input type="password" id="repitecontra" name="repitecontra"/>
+						</div>
+						<div>
+							<label for="email">Email:*</label>
+							<input type="text" id="email" name="email"/>
+						</div>
+						<div>
+							<input type="checkbox" id="terminos" name="terminos"/>
+							<label for="terminos">He leído las <a href="#">Términos y condiciones</a> y las acepto.*</label>
+						</div>
+						<div>
+							<input type="radio" id="comunidadAzar" name="comunidad"/>
+							<label for="comunidadAzar">Entrar a una comunidad al azar</label>
+						</div>
+						<div>
+							<input type="radio" id="comunidadExistente" name="comunidad"/>
+							<label for="comunidadExistente">Únete a la comunidad existente o crea una nueva</label>
+						</div>
+						<div>
+							<span id="minuscula">*campo obligatorio</span>
+						</div>
+						<div>
+							<div id="sinregistro">
+								<button>Intenta sin registrarte</button>
+							</div>
+							<div id="juegagratis">
+								<button>Jugar gratuitamente >></button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div id="tendencias">
+					<div id="titulo3">
+						Tendencia de las apuestas
+					</div>
+					<img src="Imagenes/tendencia.jpg" alt="tendencia" title="tendencia"/>
+				</div>
+				<div id="publi">
+					<p id="publi"><span>- Publicidad -</span></p></br>
+					<img src="Imagenes/amazon.jpg" alt="Amazon" title="Amazon"/>
+					<img src="Imagenes/g_play.jpg" alt="Google Play" title="Google Play"/>
+					<img src="Imagenes/app_store.jpg" alt="App Store" title="App Store"/>
+					<img src="Imagenes/windows_phone.jpg" alt="Windows Phone" title="Windows Phone"/>
+				</div>
 			</div>
-			<div id="der">
-				<div>
-					<img src="Imagenes/tendencia.jpg"/>
-				</div>
-				<div>
-					<span class="peq">-Publicidad-</span>
-				</div>
-				<div>
-					<img class="img_izq" src="Imagenes/amazon.jpg"/>
-					<img class="img_izq" src="Imagenes/g_play.jpg"/>
-				</div>
-				<div>
-					<img class="img_izq" src="Imagenes/app_store.jpg"/>
-					<img class="img_izq" src="Imagenes/windows_phone.jpg"/>
-				</div>
+			<div id="pie">
+			<p id="centrar">
+			
+			</p>			
 			</div>
-		</div>
-		<div id="pie">
-			<p class="peq"><a href="#">Su publicidad aquí</a> - <a href="#">Ayuda</a> - <a href="#">Características</a> - <a href="#">&iquest;Sugerencias, preguntas, deseos o problemas con el Website?</a> - <a href="#">Enlaces</a> - <a href="#">Contacto</a><br/>c 2000-2015 comunio.net</p>
 		</div>
 	</body>
 </html>

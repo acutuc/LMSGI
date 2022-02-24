@@ -1,0 +1,126 @@
+html{
+box-sizing:border-box;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:inherit;
+}
+
+body{
+background-color:lightgrey;
+}
+
+#contenedor{
+width:90%;
+margin:0 auto;
+}
+
+#cabecera{
+background-color:#1a2e35;
+width:100%;
+}
+
+#menu{
+width:100%;
+}
+
+#menu li{
+list-style:none;
+float:left;
+background-color:#1a2e35;
+width:10%;
+text-align:center;
+display:block;
+height:3em;
+}
+
+#menu li a{
+text-decoration:none;
+color:lightblue;
+display:block;
+}
+
+#menu li:hover{
+background-color:#111f25;
+}
+
+#registro{
+width:100%;
+margin:1em 2em;
+background-color:white;
+}
+
+form{
+margin:1em 1em;
+background-color:#D8F3FD;
+}
+
+form > div{
+padding:1em;
+border:1px solid white;
+}
+
+form div label{
+float:left;
+}
+
+form div input[type="text"]{
+float:right;
+width:50%;
+}
+
+form div input[type="password"]{
+float:right;
+width:50%;
+}
+
+#botones{
+background-color:white;
+}
+
+#tendencias{
+float:left;
+width:100%;
+background-color:white;
+}
+
+#masvisitados, #masbuscados{
+float:left;
+width:50%;
+text-align:center;
+padding:1em;
+}
+
+#masvisitados{
+border-top:1em solid lightgrey;
+border-right:1em solid lightgrey;
+border-bottom:1em solid lightgrey;
+}
+
+#masbuscados{
+border-top:1em solid lightgrey;
+border-bottom:1em solid lightgrey;
+}
+
+#pie{
+background-color:black;
+width:100%;
+}
+
+#pie > p{
+color:#517985;
+text-align:center;
+margin:1em 0;
+}
+
+.blanco{
+color:white
+}
+
+#part1 > img{
+float:left;
+}
+
+

@@ -1,144 +1,91 @@
 html{
-	box-sizing: border-box;
-	width: 100%;
-	background: white url("../Imagenes/fondo.jpg");
-}
-
-body{
-	width: 830px;
-	margin: 0 auto;
-	background-color: #185512;
+box-sizing:border-box;
 }
 
 *{
-	box-sizing: inherit;
-	margin: 0;
-	padding: 0;
+margin:0;
+padding:0;
+box-sizing:inherit;
 }
 
-/*------- Cabecera ----------*/
+body{
+background:url("../Imagenes/fondo.jpg");
+}
+
+#contenedor{
+width:830px;
+margin: 0 auto;
+background-color:#185512;
+}
+
 #cabecera{
-	height:98px;
-	background: white url("../Imagenes/cabacera.jpg") no-repeat 0 center;
+width:100%;
+height:95px;
+background:url("../Imagenes/cabacera.jpg");
 }
 
-/*--------- Menu ------------*/
 #menu{
-	width:100%;
-	height:33px;
-	background:url("../Imagenes/fondo_menu.jpg");
-	overflow:hidden;
+width:100%;
+height:33px;
+background:url("../Imagenes/fondo_menu.jpg");
+overflow:hidden; /*oculta los caracteres que salen del bloque*/
 }
 
 #menu ul{
-	list-style:none;
+list-style:none; /*quita los símbolos de las listas*/
 }
 
 #menu ul li{
-	float:left;
+float:left;
 }
 
 #menu ul li a{
-	text-decoration:none;
-	display:block;
-	line-height:33px;
-	color:white;
-	padding:0 0.25em;
-	font-weight:bold;
+text-decoration:none; /*quita el subrayado a los enlaces*/
+display:block; /*hace que cambie de cursor en el 100% del bloque*/
+line-height:33px;
+color:white;
+padding:0 0.25em;
+font-weight:bold;
 }
 
 #menu ul li a:hover{
 color:black;
 background:#c8dcc1
 }
-/*-------- Cuerpo formulario ---------*/
-#primero{
-	margin-top: 1em;
-	margin-bottom: 1em;
-	background-color: #042906;
-	color: white;
-	overflow:hidden;
-	font-size:.8em;
+
+#centro{
+width:100%;
 }
 
-#primero div{
-	width: 30%;
-	float:left;
-	padding: .5em;
+#login{
+margin-top:1em;
+width:100%;
+background-color:#0f330b;
+overflow:hidden;
 }
 
-#primero div input[type="text"], #primero div input[type="password"]{
-	width:6em;
-	height:.8em;
+#contnomusuario{
+float:left;
+margin-left:3%;
+width:33%;
 }
 
-#primero div a{
-	color:white;
-	font-size:.7em;
+#nomusuario{
+float:left;
+width:33%;
+margin-left:3%;
 }
 
-/*---------- Cuerpo izq ------------*/
-#contenido{
-	overflow:hidden;
+#contpassusuario{
+float:left;
 }
 
-#izq{
-	width: 500px;
-	float:left;
-}
-.semi_title{
-	background-color: #042906;
-	color:white;
-	display:block;
-	width: 500px;
-	border-top-right-radius: .25em;
+#passusuario{
+float:left;
 }
 
-#amarillo{
-	color:#edea59;
+#contlogin{
+margin-left:80%;
 }
 
-#segundo{
-	color: #185512;
-	background-color: #c3e3b3;
-}
 
-#segundo .borde{
-	border-top: 1px solid #042906;
-	height:2.5em;
-}
-
-#segundo div{
-	padding:.2em;
-	position:relative;
-}
-
-#segundo label{
-	font-size:0.8em;
-}
-
-#segundo input[type="text"], #segundo div input[type="password"]{
-	position:absolute;
-	right:0;
-}
-
-.peq{
-	font-size:.7em;
-}
-
-#gratuito{
-	background-color:#35b32c;
-	color:white;
-}
-
-/*------- Cuerpo derecha ------------*/
-#der{
-	float:right;
-}
-
-/*---------- Pie ----------*/
-#pie{
-	height:66px;
-	background:#185512 url("../images/fondo_pie.jpg");
-	color:white;
-}
