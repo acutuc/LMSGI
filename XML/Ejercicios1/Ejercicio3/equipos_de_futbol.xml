@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+	<equipo1>
+		<nombre>Málaga C.F.</nombre>
+		<ciudad>Málaga</ciudad>
+		<entrenador/>
+		<jugadores>
+			<jugador1 posicion="delantero">
+				<nombre>Baptista</nombre>
+				<nacionalidad>Brasileña</nacionalidad>			
+			</jugador1>
+			<jugador2 posicion="defensa">
+				<nombre>Demichelis</nombre>
+				<nacionalidad>Argentina</nacionalidad>
+			</jugador2>
+		</jugadores>
+	</equipo1>
+	<equipo2>
+		<nombre>Barcelona F.C.</nombre>
+		<ciudad>Barcelona</ciudad>
+		<entrenador/>
+		<jugadores>
+			<jugador1 posicion="delantero">
+				<nombre>Memphis Depay</nombre>
+				<nacionalidad>Holandesa</nacionalidad>			
+			</jugador1>
+			<jugador2 posicion="defensa">
+				<nombre>Piqué</nombre>
+				<nacionalidad>Española</nacionalidad>
+			</jugador2>
+		</jugadores>
+	</equipo2>
+</equipos>

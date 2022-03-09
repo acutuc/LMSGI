@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marcadores>
+	<entidad>
+		<descripcion>Web del IES Mar de Alborán</descripcion>	
+		<url>http://www.alboran.com/</url>
+	</entidad>
+	<entidad>
+		<descripcion>Wikipedia</descripcion>	
+		<url>http://www.wikipedia.org/</url>
+	</entidad>
+	<entidad>
+		<descripcion>W3C</descripcion>	
+		<url>http://www.w3.org</url>
+	</entidad>
+</marcadores>
