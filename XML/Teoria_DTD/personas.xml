@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE persona SYSTEM "persona.dtd">
+<!--!DOCTYPE Lleva el noombre del primer elemento-->
+<!--SYSTEM es como el href-->
+<!--Se puede poner !DOCTYPE persona [aqui se pega el contenido del dtd] para que se haga la validación de forma interna-->
+<persona>
+	<nombre>Miguel</nombre>
+	<apellidos>Martínez Pérez</apellidos>
+	<hombre/>
+	<hijos>
+		<hijo>Juan</hijo>
+		<hijo>Pedro</hijo>
+	</hijos>
+</persona>

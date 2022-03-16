@@ -1,0 +1,25 @@
+<!ELEMENT persona (nombre, apellidos?,(hombre|mujer), hijos?)>
+<!--!ELEMENT elemento (elementosHijos)-->
+<!--El signo "?" nos dice que el elemento puede ser opcional.-->
+
+<!--!ELEMENT persona (nombre|apellidos)-->
+<!--El signo "|" nos dice que puede haber una u otra-->
+
+<!--!ELEMENT persona ((nombre, apellidos) | (apellidos, nombre))-->
+<!--Podemos pedir cualquiera de los dos órdenes establecidos-->
+
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT hombre EMPTY>
+<!ELEMENT mujer EMPTY>
+<!ELEMENT hijos (hijo+)>
+<!--!ELEMENT hijos(hijo*)>
+Nos dice que puede haber de 0 a infinitas veces "hijo"-->
+<!ELEMENT hijo (#PCDATA)>
+<!--EMPTY nos dice que TIENE que estar vacío-->
+<!--Con #PCDATA digo que tiene que ir un valor-->
+<!--El signo "+" nos dice que tiene que haber AL MENOS uno-->
+
+<!--!ELEMENT elemento (#PCDATA|provincia|poblacion)*-->
+<!--Si un elemento tiene contenido mixto (texto fuera de elementos Y elementos), se hace como está en la línea de arriba-->

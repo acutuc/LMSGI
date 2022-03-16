@@ -9,7 +9,14 @@
 			<duracion>93min.</duracion>
 		</detalles>
 		<director>Todd Phillips.</director>
-		<interpretes>Will Ferrell, Luke Wilson, Vince Vaughn, Jeremy Piven, Juliette Lewis, Sean William Scott.</interpretes>
+		<interpretes>
+			<actor>Will Ferrell</actor>
+			<actor>Luke Wilson</actor>
+			<actor>Vince Vaughn</actor>
+			<actor>Jeremy Piven</actor>
+			<actor>Juliette Lewis</actor>
+			<actor>Sean William Scott</actor>
+		</interpretes>
 		<sinopsis>Mitch, Frank y Beanie son tres amigos treintañeros cuyas vidas no son exactamente lo que
 esperaban. Mitch tiene una novia ninfómana que se mete en la cama con el primero
 que agarra. Frank se ha casado y su matrimonio nada tiene que ver con
@@ -30,7 +37,17 @@ a sus viejas, salvajes y desmadradas juergas de estudiantes.</sinopsis>
 			<duracion>158min..</duracion>
 		</detalles>
 		<director>Christopher Nolan.</director>
-		<interpretes>Leonardo DiCaprio, Ken Watanabe, Joseph Gordon-Levitt, Marion Cotillard, Ellen Pagenota, Tom Hardy, Cillian Murphy, Tom Berenger, Michael Caine</interpretes>
+		<interpretes>
+			<actor>Leonardo DiCaprio</actor>
+			<actor>Ken Watanabe</actor>
+			<actor>Joseph Gordon-Levitt</actor>
+			<actor>Marion Cotillard</actor>
+			<actor>Ellen Pagenota</actor>
+			<actor>Tom Hardy</actor>
+			<actor>Cillian Murphy</actor>
+			<actor>Tom Berenger</actor>
+			<actor>Michael Caine</actor>
+		</interpretes>
 		<sinopsis>Dom Cobb (Leonardo DiCaprio) es un ladrón, prófugo de la justicia estadounidense por el supuesto asesinato de su esposa, especializado en infiltrarse en los sueños para robar ideas, claves de bancos, etc. mientras sus víctimas duermen. Esto lo logra a través de un sueño inducido por un dispositivo de tecnología militar experimental, que administra un potente sedante a las víctimas y a los atacantes, creando un sueño compartido, ubicado en un escenario construido por la subconciencia de uno de los atacantes, y ocupado por proyecciones mentales (subconsciencia) del sujeto al que se le extrae la información, quien por lo mismo no sospecha estar soñando.
 
 En una misión Dom Cobb y su equipo son contratados por Ingeniería Cobol para extraer el plan de expansión de Proclus Global, liderada por el magnate japonés Saito (Ken Watanabe) pero, por un giro inesperado, la operación resulta ser detectada por la víctima y se sale de control. Uno de los integrantes del equipo de Cobb, Nash (Lukas Haas), entrega al equipo para salvar su propia vida, pero Saito entonces revela haber orquestado todo para ponerlos a prueba, tras lo cual les propone un trabajo: que en lugar de robar una idea implanten una (de ahí el nombre de la película), a lo que el equipo se opone por la dificultad que representa. Sin embargo, Cobb se ve tentado con la promesa de que si lo consiguen, sus problemas legales se resolverán.
@@ -44,7 +61,6 @@ Cuando Robert Fischer fallece en Sídney, Saito y el equipo de Cobb comparten el
 Para despertar al equipo de los sueños usan las "patadas" (acciones que hacen que alguien despierte, como la sensación de caer), porque el químico suministrado es tan potente que se pueden saltear en los sueños haciéndolos cada vez más profundos y de mayor actividad cerebral. Tal es el efecto del sedante que si una persona muere en el sueño no despierta, sino que entra en un mundo onírico infinito: el limbo.
 
 La película conecta de nuevo con la escena del principio, donde Cobb conversa con un anciano. Prevenido por las anteriores palabras de este y reaccionando ante ellas, reanuda el diálogo —revelando a un envejecido Saito que ha pasado décadas en el limbo— para devolverlos a ambos a la realidad. Entre las frases que cruzan entre sí hay algunas que le recuerdan a cada uno de ellos dónde se encuentran. Cobb le pide a Saito que regrese con él al mundo real. De inmediato despierta y encuentra a todos en el avión, incluido Saito, quien cumple su parte del acuerdo y Cobb entra en Estados Unidos, donde se reúne con sus hijos. Al llegar a casa, hace girar la peonza para poner a prueba la realidad, pero sus hijos lo distraen y pierde el interés. La peonza gira sin descanso durante un largo rato, pero empieza a tambalearse y la película termina.
-
 </sinopsis>
 		<web web=""/>
 		<pegi pegi="+12"/>

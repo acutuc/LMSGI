@@ -40,7 +40,7 @@
 				<cantidad>2</cantidad>
 				<precio>40 eur.</precio>
 				<iva>16,0</iva>
-				<importe>92,80 eur.</importe>
+				<importe>92,80 eur.</importe><!--LOS NÚMEROS CON DECIMALES VAN CON PUNTO, NO CON COMA-->
 			</ref>
 			<ref id="HD250GS A7">
 				<descripcion>DISCO DURO 250GB S-ATA 7200</descripcion>
