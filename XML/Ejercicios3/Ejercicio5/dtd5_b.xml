@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jornada[
+<!ELEMENT jornada (partido+)>
+<!ELEMENT partido (equipoLocal, equipoVisitante)+>
+<!ELEMENT equipoLocal (#PCDATA|goles)*>
+<!ELEMENT equipoVisitante (#PCDATA|goles)*>
+<!ELEMENT goles (#PCDATA)>
+]>
+<jornada>
+	<partido>
+		<equipoLocal>Nottingham Presa
+			<goles>0</goles>
+		</equipoLocal>
+		<equipoVisitante>Inter de Mitente
+			<goles>1</goles>
+		</equipoVisitante>
+	</partido>
+	<partido>
+		<equipoLocal>Vodka Juniors
+			<goles>3</goles>
+		</equipoLocal>
+		<equipoVisitante>Sparta da Risa
+			<goles>3</goles>
+		</equipoVisitante>
+	</partido>
+	<partido>
+		<equipoLocal>Water de Munich
+			<goles>4</goles>
+		</equipoLocal>
+		<equipoVisitante>Esteaua es del Grifo
+			<goles>2</goles>
+		</equipoVisitante>
+	</partido>
+</jornada>
