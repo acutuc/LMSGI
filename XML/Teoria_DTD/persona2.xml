@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE persona 
+<persona>
+	<nombre>Juan</nombre>
+	<apellidos>Santos</apellidos>
+	<direccion>
+		<calle>Teodoro Rojo</calle>
+		<poblacion></poblacion>
+	</direccion>
+</persona>

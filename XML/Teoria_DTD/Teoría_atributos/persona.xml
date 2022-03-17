@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<!DOCTYPE persona SYSTEM "persona.dtd">-->
+<!DOCTYPE persona [
+<!ELEMENT persona (nombre, apellidos, direccion, (hombre|mujer)?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT direccion (calle, poblacion)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT hombre EMPTY>
+<!ELEMENT mujer EMPTY>
+
+<!ATTLIST poblacion cod CDATA #IMPLIED
+	habitantes CDATA #REQUIRED>
+]>
+<!--ATTLIST para definir atributos.
+!ATTLIST (elemento que contiene el atributo) (nombre atributo) CDATA es equivalente a pcdata, #REQUIRED para que sea obligatorio-->
+<!--Además de #REQUIRED, están también:
+#FIXED que fija seguidamente un valor al atributo (tienen que tener el mismo valor que en el código y va en comillas "")
+#IMPLIED puede aparecer o no. Ej.: <!ATTLIST poblacion cod ("verde"|"rojo"|"amarillo") #IMPLIED>
+NMTOKEN o NMTOKENS:
+habitantes NMTOKENS #IMPLIED
+<!ATTLIST persona dni ID #REQUIRED>. Nos dice que el atributo dni es un ID y es obligatorio. Comparte los atributos de NMTOKEN (no puede empezar por número blablabla).
+IDRED. Clave primaria en otra etiqueta
+IDREFs. Varios IDREF
+-->
+<persona dni="_23543563M">
+	<nombre>Juan</nombre>
+	<apellidos>Santos</apellidos>
+	<direccion>
+		<calle>Teodoro Rojo</calle>
+		<poblacion habitantes="1987" cod="29680">Estepona</poblacion>
+	</direccion>
+	<hombre/>
+</persona>

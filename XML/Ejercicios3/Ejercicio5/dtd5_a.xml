@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE partido[
+<!ELEMENT jornada (partido+)>
+<!ELEMENT partido (equipoLocal, equipoVisitante)+>
+<!ELEMENT equipoLocal EMPTY>
+<!ELEMENT equipoVisitante EMPTY>
+<!ATTLIST equipoLocal nombre CDATA #REQUIRED>
+]>
+<jornada>
+	<partido>
+		<equipoLocal nombre="" goles=""/>
+		<equipoVisitante nombre="" goles=""/>
+	</partido>
+	<partido>
+		<equipoLocal nombre="" goles=""/>
+		<equipoVisitante nombre="" goles=""/>
+	</partido>
+	<partido>
+		<equipoLocal nombre="" goles=""/>
+		<equipoVisitante nombre="" goles=""/>
+	</partido>
+</jornada>
