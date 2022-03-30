@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cancion [
 <!ELEMENT cancion (titulo, compositores, productores, sello, artista)>
 <!ATTLIST cancion duracion CDATA #IMPLIED>
 <!ATTLIST cancion anio CDATA #IMPLIED>
@@ -5,8 +7,26 @@
 <!ELEMENT compositores (compositor+)>
 <!ELEMENT productores (productor+)>
 <!ELEMENT sello (#PCDATA)>
-<!ELEMENT artista (#PCDATA>
+<!ELEMENT artista (#PCDATA)>
 <!ELEMENT compositor (nombres, apellidos)>
 <!ELEMENT productor (nombres, apellidos)>
 <!ELEMENT nombres (#PCDATA)>
 <!ELEMENT apellidos (#PCDATA)>
+]>
+<cancion>
+	<titulo></titulo>
+	<compositores>
+		<compositor>
+			<nombres></nombres>
+			<apellidos></apellidos>
+		</compositor>
+	</compositores>
+	<productores>
+		<productor>
+			<nombres></nombres>
+			<apellidos></apellidos>
+		</productor>
+	</productores>
+	<sello></sello>
+	<artista></artista>
+</cancion>

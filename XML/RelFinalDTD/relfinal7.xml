@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cd [
+<!--cancion es el sustituto de songs del ejercicio.-->
+<!ELEMENT cd (cancion+, fecha)>
+<!ELEMENT fecha EMPTY>
+<!ATTLIST cd titulo CDATA #REQUIRED>
+<!ATTLIST fecha dia CDATA #REQUIRED>
+<!ATTLIST fecha mes CDATA #REQUIRED>
+<!ATTLIST fecha anio CDATA #REQUIRED>
+<!ELEMENT cancion (titulo, compositores, productores, sello, artista)>
+<!ATTLIST cancion duracion CDATA #IMPLIED>
+<!ATTLIST cancion anio CDATA #IMPLIED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT compositores (compositor+)>
+<!ELEMENT productores (productor+)>
+<!ELEMENT sello (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT compositor (nombres, apellidos)>
+<!ELEMENT productor (nombres, apellidos)>
+<!ELEMENT nombres (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+]>
+<cd titulo="este es un ejercicio de xml">
+	<cancion>
+		<titulo></titulo>
+		<compositores>
+			<compositor>
+				<nombres></nombres>
+				<apellidos></apellidos>
+			</compositor>
+		</compositores>
+		<productores>
+			<productor>
+				<nombres></nombres>
+				<apellidos></apellidos>
+			</productor>
+		</productores>
+		<sello></sello>
+		<artista></artista>
+	</cancion>
+	<fecha dia="1" mes="1" anio="1"/>
+</cd>

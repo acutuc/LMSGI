@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Pedido[
+<!ELEMENT Pedido (Destino, Ordenante, Observaciones, Contenido)>
+<!ATTLIST Pedido fecha CDATA #REQUIRED>
+<!ELEMENT Destino (Nombre, Direccion, Ciudad, CodPostal)>
+<!ELEMENT Ordenante (Nombre, Direccion, Ciudad, CodPostal)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Direccion (#PCDATA)>
+<!ELEMENT Ciudad (#PCDATA)>
+<!ELEMENT CodPostal (#PCDATA)>
+<!ELEMENT Observaciones (#PCDATA)>
+<!ELEMENT Contenido (Producto+)>
+<!ELEMENT Producto (#PCDATA)>
+<!ATTLIST Producto precio CDATA #REQUIRED>
+<!ATTLIST Producto ref CDATA #REQUIRED>
+]>
+<Pedido fecha="20 Octubre 1999">
+	<Destino>
+		<Nombre>Alicia Abad</Nombre>
+		<Direccion>Plaza de la Duquesa 12</Direccion>
+		<Ciudad>Albacete</Ciudad>
+		<CodPostal>05020</CodPostal>
+	</Destino>
+	<Ordenante>
+		<Nombre>Roberto Movilla</Nombre>
+		<Direccion>General Ricardos 56</Direccion>
+		<Ciudad>Madrid</Ciudad>
+		<CodPostal>28055</CodPostal>
+	</Ordenante>
+	<Observaciones>Comprobar si la podadora es eléctrica</Observaciones>
+	<Contenido>
+		<Producto precio="148.95" ref="872-AA">Cortadora de césped eléctrica</Producto>
+		<Producto precio="7.98" ref="926-FH">Podadora</Producto>
+		<Producto precio="7.98" ref="926-FH">Podadora</Producto>
+		<Producto precio="7.98" ref="926-FH">Podadora</Producto>
+	</Contenido>
+</Pedido>

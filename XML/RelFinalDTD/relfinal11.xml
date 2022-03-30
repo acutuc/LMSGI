@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Libro[
+<!ELEMENT Libro (Titulo, Contenido, Copyright)>
+<!ATTLIST Libro id CDATA #REQUIRED>
+<!ELEMENT Titulo (#PCDATA)>
+<!ELEMENT Contenido (Capitulo, Separacion?)+>
+<!ELEMENT Capitulo (Tema, Seccion+)>
+<!ATTLIST Capitulo materia CDATA #IMPLIED>
+<!ELEMENT Tema (#PCDATA)>
+<!ELEMENT Seccion (#PCDATA)>
+<!ATTLIST Seccion apartados CDATA #REQUIRED dificil CDATA #IMPLIED>
+<!ELEMENT Separacion EMPTY>
+<!ELEMENT Copyright (#PCDATA)>
+]>
+<Libro id="_1">
+	<Titulo>Libro 1</Titulo>
+	<Contenido>
+		<Capitulo materia="Terror">
+			<Tema>1</Tema>
+			<Seccion apartados="apartados" dificil="no">Sección 1</Seccion>
+		</Capitulo>
+		<Separacion/>
+	</Contenido>
+	<Copyright>Sí</Copyright>
+</Libro>
