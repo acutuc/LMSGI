@@ -1,0 +1,3 @@
+<!ELEMENT buzon (paquete*, carta*)*>
+<!ELEMENT paquete EMPTY>
+<!ELEMENT carta EMPTY>

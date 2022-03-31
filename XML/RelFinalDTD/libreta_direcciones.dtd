@@ -1,0 +1,7 @@
+<!ELEMENT libreta_de_direcciones (usuario+)>
+<!ELEMENT usuario EMPTY>
+<!ATTLIST usuario nombre CDATA #REQUIRED
+	apellidos CDATA #REQUIRED
+	dni ID #REQUIRED
+	ciudad CDATA #REQUIRED
+	cp CDATA #REQUIRED>

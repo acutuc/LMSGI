@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE libreta_de_direcciones SYSTEM "libreta_direcciones.dtd">
+<libreta_de_direcciones>
+	<usuario nombre="nombre1" apellidos="apellidos1" dni="_444555666" ciudad="Estepona" cp="29680"/>
+	<usuario nombre="nombre2" apellidos="apellidos2" dni="_777888999" ciudad="Monda" cp="29110"/>
+</libreta_de_direcciones>

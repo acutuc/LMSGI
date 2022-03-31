@@ -1,0 +1,20 @@
+<!ELEMENT empresa (piezas, motores, secciones, empleados)>
+<!ELEMENT piezas (pieza+)>
+<!ELEMENT pieza EMPTY>
+<!ATTLIST pieza id ID #REQUIRED
+		compuesta IDREFS #IMPLIED>
+<!ELEMENT motores (motor+)>
+<!ELEMENT motor (trabajador+)>
+<!ATTLIST motor id ID #REQUIRED
+		responsable IDREF #REQUIRED
+		piezas IDREFS #REQUIRED>
+<!ELEMENT trabajador EMPTY>
+<!ATTLIST trabajador cod IDREF #REQUIRED
+		familiares IDREFS #IMPLIED>
+<!ELEMENT secciones (seccion+)>
+<!ELEMENT seccion EMPTY>
+<!ATTLIST seccion cod ID #REQUIRED
+		motores IDREFS #REQUIRED>
+<!ELEMENT empleados (empleado+)>
+<!ELEMENT empleado EMPTY>
+<!ATTLIST empleado nif ID #REQUIRED>
