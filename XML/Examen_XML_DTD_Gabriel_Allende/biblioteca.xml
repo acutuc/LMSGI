@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libros, autores, editoriales)>
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (titulo, precio, fecha_publicacion, revisores*)>
+<!ATTLIST libro isbn ID #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA #REQUIRED>
+<!ELEMENT fecha_publicacion (#PCDATA)>
+<!ELEMENT revisores (revisor*)>
+<!ELEMENT revisor (valoracion, comentario?)>
+<!ATTLIST revisor nif_revisor IDREF #REQUIRED>
+<!ELEMENT valoracion (#PCDATA)>
+<!ELEMENT comentario (#PCDATA)>
+<!ELEMENT autores (autor+)>
+<!ELEMENT autor (nombre, apellidos, email?)>
+<!ATTLIST autor nif ID #REQUIRED
+				libro_autor IDREFS #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT editoriales (editorial+)>
+<!ELEMENT editorial (oficina, web)>
+<!ATTLIST editorial nombre ID #REQUIRED
+					isbn_ref IDREF #REQUIRED>
+<!ELEMENT oficina (#PCDATA)>
+<!ELEMENT web (#PCDATA)>
+]>
+
+<biblioteca>
+	<libros>
+		<libro isbn="_1-55655-767-6">
+			<titulo>Fundamentos de bases de datos</titulo>
+			<precio moneda="euro">40</precio>
+			<fecha_publicacion>2003</fecha_publicacion>
+			<revisores>
+				<revisor nif_revisor="_23456789N">
+					<valoracion>8.5</valoracion>
+					<comentario>"Es un libro de texto básico"</comentario>
+				</revisor>
+			</revisores>
+		</libro>
+		<libro isbn="_1111">
+			<titulo>Título 2</titulo>
+			<precio moneda="euro">100</precio>
+			<fecha_publicacion>2020</fecha_publicacion>
+		</libro>
+		<libro isbn="_2222">
+			<titulo>Título 3</titulo>
+			<precio moneda="euro">30</precio>
+			<fecha_publicacion>2018</fecha_publicacion>
+			<revisores>
+				<revisor nif_revisor="_23456789N">
+					<valoracion>7</valoracion>
+				</revisor>
+				<revisor nif_revisor="_44444444G">
+					<valoracion>9</valoracion>
+				</revisor>
+				<revisor nif_revisor="_23456787G">
+					<valoracion>10</valoracion>
+					<comentario>"UN LIBRO MARAVILLOSO"</comentario>
+				</revisor>
+			</revisores>
+		</libro>
+	</libros>
+	<autores>
+		<autor nif="_23456788P" libro_autor="_1-55655-767-6 _1111">
+			<nombre>Abraham </nombre>
+			<apellidos>Silberschatz</apellidos>
+			<email>silbers@hotmail.com</email>
+		</autor>
+		<autor nif="_23456787G" libro_autor="_1111">
+			<nombre>Henry</nombre>
+			<apellidos>Korth</apellidos>
+			<email>korth@hotmail.com</email>
+		</autor>
+		<autor nif="_23456789N" libro_autor="_1111">
+			<nombre>James</nombre>
+			<apellidos>Smith</apellidos>
+		</autor>
+		<autor nif="_44444444G" libro_autor="_2222">
+			<nombre>Gabriel</nombre>
+			<apellidos>Allende</apellidos>
+		</autor>
+	</autores>
+	<editoriales>
+		<editorial nombre="McGraw-Hill" isbn_ref="_1-55655-767-6">
+			<oficina>Av. Santander s/n</oficina>
+			<web>http://www.mcgrawhill.es</web>
+			
+		</editorial>
+		<editorial nombre="editorial1" isbn_ref="_1111">
+			<oficina>Dirección inventada 1</oficina>
+			<web>http://www.url1.es</web>
+		</editorial>
+		<editorial nombre="editorial2" isbn_ref="_2222">
+			<oficina>Dirección inventada 2</oficina>
+			<web>http://www.url2.es</web>
+		</editorial>
+	</editoriales>
+</biblioteca>
