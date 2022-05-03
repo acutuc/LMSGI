@@ -38,8 +38,7 @@
     </xs:simpleType>
 
     <xs:simpleType name="tipoSinClasificar">
-        <xs:restriction base="xs:string">
-        </xs:restriction>
+        <xs:restriction base="xs:string"/>
     </xs:simpleType>
 
     <xs:complexType name="tipoReparto">
