@@ -2,6 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     
 <xs:element name="cartelera" type="tipoCartelera"/>
+
     <xs:complexType name="tipoCartelera">
         <xs:sequence>
             <xs:element name="película" type="tipoPelicula" maxOccurs="unbounded"/>
@@ -14,27 +15,29 @@
             <xs:element name="título_original" type="xs:string" minOccurs="0"/>
             <xs:element name="nacionalidad" type="xs:string"/>
             <xs:element name="género" type="xs:string"/>
-            <xs:element name="clasificación" type="tipoClasificacion" minOccurs="0"/>
-            <xs:element name="sin_clasificar" type="tipoSinClasificar" minOccurs="0"/>
+            <xs:choice>
+                <xs:element name="clasificación" type="tipoClasificacion"/>
+                <xs:element name="sin_clasificar" type="tipoSinClasificar"/>  
+            </xs:choice>
             <xs:element name="sinopsis" type="xs:string"/>
             <xs:element name="director" type="xs:string"/>
             <xs:element name="reparto" type="tipoReparto"/>
             <xs:element name="web" type="xs:string" minOccurs="0"/>
             <xs:element name="cartel" type="xs:string" minOccurs="0"/>
         </xs:sequence>
-        <xs:attribute name="código" type="xs:NMTOKEN" use="required"/>
+        <xs:attribute name="código" type="xs:ID" use="required"/>
         <xs:attribute name="duración" type="xs:positiveInteger" use="required"/>
         <xs:attribute name="año" type="xs:positiveInteger" use="optional"/>
     </xs:complexType>
 
     <xs:complexType name="tipoClasificacion">
-        <xs:attribute name="edad" type="xs:string" use="required"/>
+        <xs:attribute name="edad" type="tipoEdad" use="required"/>
     </xs:complexType>
 
-    <xs:simpleType name="edad">
+    <xs:simpleType name="tipoEdad">
         <xs:restriction base="xs:string">
-                <xs:pattern value="tp|8|12|16|18"/>
-            </xs:restriction>
+            <xs:pattern value="tp|8|12|16|18"/>
+        </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="tipoSinClasificar">
