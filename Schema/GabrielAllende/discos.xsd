@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="discos" type="tipoDiscos"/>
+
+    <xs:complexType name="tipoDiscos">
+        <xs:sequence>
+            <xs:element name="grupo" type="tipoGrupo" maxOccurs="unbounded"/>
+            <xs:element name="disco" type="tipoDisco" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="tienda" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoGrupo">
+        <xs:sequence>
+            <xs:element name="nombre" type="tipoRestriccion"/>
+            
+            <xs:group ref="GRUPO"/>
+
+            <xs:element name="calle" type="tipoRestriccion" minOccurs="0"/>
+            <xs:element name="localidad" type="tipoRestriccion" minOccurs="0"/>
+            <xs:element name="nacionalidad" type="tipoRestriccion" minOccurs="0"/>
+            <xs:element name="web" type="tipoRestriccion" minOccurs="0"/>
+            <xs:element name="email" type="tipoRestriccion" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="nom" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoDisco">
+        <xs:sequence>
+            <xs:element name="interprete" type="tipoInterprete"/>
+            <xs:element name="titulo" type="tipoRestriccion"/>
+            <xs:element name="discografica" type="tipoDiscografica" minOccurs="0"/>
+            <xs:element name="anio" type="tipoAnio"/>
+            <xs:element name="stock" type="tipoStock"/>
+        </xs:sequence>
+        <xs:attribute name="precio" type="tipoPrecio" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoDiscografica">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Sony|CBS|SIRE|OTRAS"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoStock">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="200"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoPrecio">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoInterprete">
+        <xs:attribute name="grupo" type="tipoRestriccion" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoAnio" mixed="true">
+        <xs:attribute name="mes" type="tipoMes" use="optional"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoMes">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--Los campos de texto que no estén ya restringidos por otra regla, no podrán superar
+        ninguno los 50 caracteres.-->
+    <xs:simpleType name="tipoRestriccion">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:group name="GRUPO">
+        <xs:sequence>
+            <xs:element name="miembro" type="xs:string" maxOccurs="1"/>  
+            <xs:element name="miembro" type="xs:string" maxOccurs="1"/>
+            <xs:element name="miembro" type="xs:string" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:group>
+
+</xs:schema>

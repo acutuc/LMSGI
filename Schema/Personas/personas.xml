@@ -2,7 +2,7 @@
 <personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="personas.xsd">
     <persona>
         <nombre>Juan Pardo</nombre>
-        <nacimiento dia="10" mes="Abril" anyo="1982"/>
+         
         <direcciones>
             <direccion>
                 <calle>Caoba, 1</calle>
