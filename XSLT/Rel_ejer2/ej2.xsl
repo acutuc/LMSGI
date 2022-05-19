@@ -10,6 +10,7 @@
                 table, td, th{border:1px solid black}
                 table{border-collapse:collapse;width:80%;margin:0 auto;text-align:center}
                 th{background-color:#CCC}
+                .rojo{background-color:red}
             </style>
         </head>
         <body>
@@ -17,9 +18,25 @@
             <table>
                 <tr><th>Precio</th><th>Título</th><th>Año de publicación</th></tr>
                 <xsl:for-each select="bib/libro">
+                <xsl:sort select="precio" order="ascending"/>
                 <tr>
                     <td>
-                        
+                        <xsl:value-of select="precio"/>
+                    </td>
+                    <xsl:choose>
+                        <xsl:when test="precio &gt; 100">
+                            <td class="rojo">
+                                <xsl:value-of select="titulo"/>
+                            </td>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <td>
+                                <xsl:value-of select="titulo"/>
+                            </td>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <td>
+                        <em><xsl:value-of select="@año"/></em>
                     </td>
                 </tr>
             </xsl:for-each>
