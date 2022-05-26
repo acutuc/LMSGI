@@ -4,7 +4,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Ejercicio 6</title>
+                <title>Ejercicio 7</title>
                 <meta charset="UTF-8"/>
                 <style>
                     table, td, th{border:1px solid black}
@@ -13,15 +13,17 @@
                     .verde{color:green}
                     .azul{color:blue}
                     .rojo{color:red}
+                    img{height:100px; width:100px}
                 </style>
             </head>
             <body>
-                <h3>Ejercicio 6</h3>
+                <h3>Ejercicio 7</h3>
                 <table>
                     <tr>
                         <th>Código</th>
                         <th>Artículo</th>
                         <th>Cantidad</th>
+                        <th>Imagen</th>
                     </tr>
                     <xsl:for-each select="tienda/producto">
                         <tr>
@@ -49,6 +51,9 @@
                             </td>
                             <td>
                                 <xsl:value-of select="cantidad"/>
+                            </td>
+                            <td>
+                                <img><xsl:attribute name="src">Imagenes/<xsl:value-of select="imagen"/></xsl:attribute></img>
                             </td>
                         </tr>
                     </xsl:for-each>
