@@ -4,7 +4,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Información de los Continentes</title>
+                <title>Transformación XSLT</title>
                 <meta charset="UTF-8"/>
                 <style>
                     td img{height:100px}
@@ -13,29 +13,36 @@
             </head>
             <body>
                 <h1>Información de los Continentes</h1>
-                <xsl:for-each select="geografia/continentes">
-                    <ol>
+                <ol>
+                    <xsl:for-each select="geografia/continentes/continente">
+                        <xsl:sort select="@nombre"/>
                         <li>
                             <h2>
-                                <xsl:value-of select="continente/@nombre"/>
+                                <xsl:value-of select="@nombre"/>
                             </h2>
                             <ul>
-                                <li>
-                                    <a>
-                                        <xsl:value-of select="pais"/>
-                                    </a>
-                                </li>
+                                <xsl:for-each select="pais">
+                                    <xsl:sort select="." order="descending"/><!--EL PUNTO ES PARA LLAMAR AL ELEMENTO EN SÍ MISMO-->
+                                    <li>
+                                        <a>
+                                            <xsl:attribute name="href">#<xsl:value-of select="."></xsl:value-of></xsl:attribute>
+                                            <xsl:value-of select="."/>
+                                        </a>
+                                    </li>
+                                </xsl:for-each>
                             </ul>
                         </li>
-                    </ol>
-                </xsl:for-each>
+                    </xsl:for-each>
+                </ol>
+
 
                 <h1>Información de los países</h1>
                 <ol>
                     <xsl:for-each select="geografia/paises/pais">
-                        <xsl:sort order="ascending"/>
+                        <xsl:sort select="@nombre" order="ascending"/>
                         <li>
                             <h2>
+                                <xsl:attribute name="id"><xsl:value-of select="@nombre"/></xsl:attribute>
                                 <xsl:value-of select="@nombre"/>
                             </h2>
                             <table>
@@ -53,18 +60,27 @@
                                             <strong>Idioma: </strong>
                                             <xsl:value-of select="idioma"/>
                                         </p>
-                                        <p>
-                                            <strong>Moneda: </strong>
-                                            <xsl:value-of select="moneda"/>
-                                        </p>
-                                        <p>
-                                            <strong>Moneda antigua: </strong>
-                                            <xsl:value-of select="moneda/@antigua"/>
-                                        </p>
+                                        <xsl:for-each select="moneda">
+                                            <xsl:choose>
+                                                <xsl:when test="@antigua != ''"><!--Si @antigua es vacío-->
+                                                    <p>
+                                                        <strong>Moneda antigua: </strong>
+                                                        <xsl:value-of select="."/>
+                                                    </p>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <p>
+                                                        <strong>Moneda: </strong>
+                                                        <xsl:value-of select="."/>
+                                                    </p>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </xsl:for-each>
                                     </td>
-                                    <td>
+                                    <td class="esp">
                                         <img>
                                             <xsl:attribute name="src">Img/<xsl:value-of select="@nombre"/>.png</xsl:attribute>
+                                            <xsl:attribute name="title"><xsl:value-of select="@nombre"></xsl:value-of></xsl:attribute>
                                         </img>
                                     </td>
                                 </tr>
