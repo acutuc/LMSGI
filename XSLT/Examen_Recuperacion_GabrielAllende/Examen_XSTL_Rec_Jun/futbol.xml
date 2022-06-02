@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="examen.xsl"?>
+<futbol>
+  <jugadores>
+    <jugador nombre="David Villa" nacido="1981" foto="villa.jpg"/>
+    <jugador nombre="Javier Farinós" edad="46" foto="farinos.jpg"/>
+    <jugador nombre="Asier del Horno" nacido="1981" foto="asier.jpg"/>
+    <jugador nombre="Jordi Alba" nacido="1989" foto="alba.jpg"/>
+    <jugador nombre="Lionel Messi" edad="33" foto="messi.jpg"/>
+    <jugador nombre="Carles Puyol" nacido="1978" foto="puyol.jpg"/>
+    <jugador nombre="José Luis Morales" edad="33" foto="morales.jpg"/>
+  </jugadores>
+  <equipos>
+    <equipo>
+      <nombre>Valencia F.C</nombre>
+      <ciudad>Valencia</ciudad>
+    </equipo>
+    <equipo>
+      <nombre>Levante U.D.</nombre>
+      <ciudad>Valencia</ciudad>
+    </equipo>
+    <equipo>
+      <nombre>F.C. Barcelona</nombre>
+      <ciudad>Barcelona</ciudad>
+    </equipo>
+  </equipos>
+  <plantillas>
+    <plantilla temporada="1999-2000" equipo="Valencia F.C.">
+      <jugador>Javier Farinós</jugador>
+    </plantilla>
+    <plantilla temporada="2009-2010" equipo="Valencia F.C.">
+      <jugador>David Villa</jugador>
+      <jugador>Asier del Horno</jugador>
+      <jugador>Jordi Alba</jugador>
+    </plantilla>
+    <plantilla temporada="2009-2010" equipo="Levante U.D.">
+      <jugador>Javier Farinós</jugador>
+      <jugador>José Luis Morales</jugador>
+    </plantilla>
+    <plantilla temporada="2009-2010" equipo="F.C. Barcelona">
+      <jugador>Lionel Messi</jugador>
+      <jugador>Carles Puyol</jugador>
+    </plantilla>
+  </plantillas>
+</futbol>
